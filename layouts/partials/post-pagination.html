@@ -1,0 +1,15 @@
+<div class="pagination">
+  {{if .PrevInSection}}
+    <a class="pagination__item" href="{{.PrevInSection.Permalink}}">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">{{.PrevInSection.Title}}</span>
+    </a>
+  {{end}}
+
+  {{if .NextInSection}}
+    <a class="pagination__item" href="{{.NextInSection.Permalink}}">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >{{.NextInSection.Title}}</a>
+    </a>
+  {{end}}
+</div>

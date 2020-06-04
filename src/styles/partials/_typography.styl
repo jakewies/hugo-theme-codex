@@ -1,0 +1,106 @@
+$baseFontSize = 16
+$fontSizeMobile = 14
+$baseLineHeight = 1.5
+$scale          = 1.414
+$leading        = $baseLineHeight * 1rem
+ 
+html
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,Cantarell, "Helvetica Neue", sans-serif
+  -webkit-font-smoothing: antialiased
+  font-size: 95%
+
+  @media screen and (min-width: $medium)
+    font-size: 100%
+
+  @media screen and (min-width: $large)
+    font-size: 115%
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin-top: $leading
+  margin-bottom: 0
+  line-height: $leading
+
+  code
+    // font-size: inherit
+
+h1
+  font-size: 1.5 * $scale * 1rem
+  line-height: 1.5 * $leading
+  margin-top: 1.5 * $leading
+
+h2
+  font-size: $scale * 1rem
+
+h3 
+  font-size: $scale / 2 * 1rem
+
+h4
+  font-size: $scale / 3 * 1rem
+
+h5
+  font-size: $scale / 4 * 1rem
+
+p
+  margin-top: $leading
+  margin-bottom: 0
+  line-height: $leading
+
+ul,
+ol
+  padding-left: $leading
+  margin-top: $leading
+  margin-bottom: $leading
+
+  li
+    line-height: $leading
+
+  ul,
+  ol
+    margin-top: 0
+    margin-bottom: 0
+
+blockquote
+  margin-top: $leading
+  margin-bottom: $leading
+  line-height: $leading
+  color: $darkGrey
+  font-style: italic
+
+pre
+  line-height: 1.45
+  margin-top: $leading
+  padding: 16px
+  word-wrap: normal
+  overflow: auto
+  background-color: #f6f8fa
+  border-radius: 3px
+
+code
+  font-size: 85%
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace
+  padding: 0.2em 0.4em
+  margin: 0
+  background-color: rgba(27,31,35,0.05)
+  border-radius: 3px
+
+pre>code 
+  word-break: normal
+  white-space: pre
+
+pre code 
+  display: inline
+  padding: 0
+  margin: 0
+  overflow: visible
+  line-height: inherit
+  word-wrap: normal
+  background-color: transparent
+  border: 0
+
+.lead
+  font-size: $scale * 1rem

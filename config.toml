@@ -1,0 +1,24 @@
+# OVERRIDE #
+
+languageCode = "en-us"
+title = "Codex GoHugo Theme"
+baseURL = "https://example.org/"
+copyright = "© {year}"
+
+[params]
+
+  name = "Codex"
+  description = "A minimal blog theme for gohugo."
+  twitter = "@gohugo-theme-codex"
+  github = "jakewies/gohugo-theme-codex"
+
+# OVERRIDE #
+
+# DONT OVERRIDE #
+
+preserveTaxonomyNames = true
+
+[taxonomies]
+  tag = "tags"
+
+# DONT OVERRIDE #

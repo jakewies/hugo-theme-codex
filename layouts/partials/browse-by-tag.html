@@ -1,0 +1,7 @@
+<ul class="tags__list">
+  {{ range $tag, $value := $.Site.Taxonomies.tags }}
+  <li class="tag__item">
+    <a class="tag__link" href="{{ "/tags/" | relLangURL}}{{ $tag | urlize }}">{{ $tag | urlize }} ({{ len $value }})</a>
+  </li>
+  {{ end }}  
+</ul>

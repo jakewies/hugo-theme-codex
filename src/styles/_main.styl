@@ -1,0 +1,18 @@
+@import 'partials/_normalize'
+@import 'partials/_vars'
+@import 'partials/_reset'
+@import 'partials/_typography'
+@import 'partials/_nav'
+
+body.nav--active
+  overflow: hidden
+
+main
+  padding: 3rem 1.5rem
+
+  // compensates for the nav sidebar on tablet and desktop
+  @media screen and (min-width: $medium)
+    padding-left: "calc(1.5rem + %s)" % $navWidth
+
+  @media screen and (max-width: $medium - 1)
+    padding-top: "calc(3rem + %s)" % $burgerContainerHeight

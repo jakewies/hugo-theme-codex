@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<div class="splash-container">
+  <div class="splash">
+    
+    <!-- Replace MEEEEE -->
+    <h1>Hi, I'm {{ .Site.Params.name }}<span class="fancy">.</span></h1>
+    {{ if isset .Site.Params "twitter" }}
+    <span class="handle">@{{ .Site.Params.twitter }}</span>
+    {{ end }}
+    <h2>
+      {{ .Site.Params.description }}
+    </h2>
+    <!-- Replace MEEEEE -->
+
+    {{ partial "social-icons.html" .}}
+  </div>
+</div>
+
+{{ end }}

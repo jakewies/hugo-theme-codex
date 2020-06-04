@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="post-list__container">
+  <ul class="post-list">
+    {{ range .Pages }}
+    <li class="post">
+      <div class="post__header">
+        <time class="post__date" datetime="{{ .Date }}"
+          >{{ .Date.Format "Jan 2 2006" }}</time
+        >
+        <h2 class="post__title">
+          <a href="{{.RelPermalink}}">{{ .Title }}</a>
+        </h2>
+        {{ partial "tags.html" .}}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "browse-by-tag.html" .}}
+</div>
+
+{{ end }}

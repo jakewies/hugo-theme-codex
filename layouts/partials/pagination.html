@@ -1,0 +1,7 @@
+<div class="paginator-container">
+  {{ if .Paginator.HasPrev }}
+  <a class="paginator paginator--left" href="{{ .Paginator.Prev.URL }}"></a>
+  {{ end }} {{ if .Paginator.HasNext }}
+  <a class="paginator paginator--right" href="{{ .Paginator.Next.URL }}"></a>
+  {{ end }}
+</div>

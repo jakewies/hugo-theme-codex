@@ -1,0 +1,42 @@
+  
+<!-- JSON-LD -->
+<script type="application/ld+json">
+  {{ if and (.IsPage) (eq .Section "blog") }}
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ .Site.BaseURL }}"
+      },
+      "articleSection" : "{{ .Section }}",
+      "name" : "{{ .Title }}",
+      "headline" : "{{ .Title }}",
+      "description" : "{{ .Description }}",
+      "inLanguage" : "en-US",
+      "author" : "{{ .Site.Params.name }}",
+      "creator" : "{{ .Site.Params.name }}",
+      "publisher": "{{ .Site.Params.name }}",
+      "accountablePerson" : "{{ .Site.Params.name }}",
+      "copyrightHolder" : "{{ .Site.Params.name }}",
+      "copyrightYear" : "{{ .Date.Format "2006" }}",
+      "datePublished": "{{ .Date }}",
+      "dateModified" : "{{ .Date }}",
+      "url" : "{{ .Permalink }}",
+      "wordCount" : "{{ .WordCount }}",
+      "keywords" : [{{ if isset .Params "keywords" }}{{ range .Params.keywords }}"{{ . }}", {{ end }}{{ end }}"Blog"]
+    }
+  {{ else }}
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "{{ .Permalink }}",
+      "name": "{{ .Title }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ .Site.Params.name }}"
+      },
+      "description": "{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"
+    }
+  {{ end }}
+  </script>
