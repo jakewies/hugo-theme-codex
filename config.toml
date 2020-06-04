@@ -9,7 +9,7 @@ copyright = "© {year}"
 
   name = "Codex"
   description = "A minimal blog theme for gohugo."
-  twitter = "@gohugo-theme-codex"
+  twitter = "gohugo-theme-codex"
   github = "jakewies/gohugo-theme-codex"
 
 # OVERRIDE #
