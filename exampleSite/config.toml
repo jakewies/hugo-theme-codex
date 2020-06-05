@@ -1,0 +1,5 @@
+title = "Codex"
+baseURL = "https://example.com"
+languageCode = "en-us"
+theme = "hugo-theme-codex"
+themesDir = "../../"
