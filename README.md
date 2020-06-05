@@ -2,8 +2,12 @@
 
 A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
-An about page 👋🏻 <br>
-A blog 📝
+### What this theme is
+
+- An about page 👋🏻 and a blog 📝
+- Blog posts can be tagged 🏷
+
+### Getting Started
 
 **1. Start a new `hugo` site**
 
@@ -74,10 +78,9 @@ hugo new blog/:blog-post.md
 
 Where `:blog-post.md` is the name of the file of your new post.
 
-### Taxonomies
+### Tags
 
 Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.
-
 
 ## Future Updates & Contributing
 
