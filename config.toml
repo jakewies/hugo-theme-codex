@@ -5,10 +5,6 @@ title = "Codex"
 baseURL = "https://example.org/"
 copyright = "© {year}"
 
-[params]
-  twitter = "hugo-theme-codex"
-  github = "jakewies/hugo-theme-codex"
-
 # OVERRIDE #
 
 # DONT OVERRIDE #

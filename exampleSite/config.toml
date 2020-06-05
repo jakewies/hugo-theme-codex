@@ -3,3 +3,7 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 theme = "hugo-theme-codex"
 themesDir = "../../"
+
+[params]
+  twitter = "hugo-theme-codex"
+  github = "jakewies/hugo-theme-codex"

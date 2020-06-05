@@ -8,37 +8,80 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 - Blog posts can be tagged
 - You can view all blog posts that a specific tag by going to /tags/:tag-name
 
-## Archetypes
+### Getting Started
 
-You can create a new blog post page by going to the root of your project and typing:
+1. Start a new `hugo` site
 
 ```
-hugo new blog/post.md
+hugo new site my-new-site
+cd my-new-site
 ```
 
-Where `post.md` is the name of your new post.
+2. Initialize project with `git`
 
-## Configuration
+```
+git init
+```
 
-There are a few configuration parameters you can add in your `config.toml` to customize the theme:
+3. Add `hugo-theme-codex` as a submodule
+
+```
+git add submodule https://github.com/jakewies/hugo-theme-codex themes/codex
+```
+
+4. List `"codex"` as the name of your theme in `config.toml`
 
 ```toml
 # config.toml
-# values listed here are default values
+
+theme = "codex"
+```
+
+See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
+
+### Configuring the Home Page
+
+The site's home page can be configured by creating a `content/_index.md` file. This file can use the following frontmatter:
+
+```md
+---
+heading: "Hi, I'm Codex"
+subheading: "A minimal blog theme for hugo."
+handle: "hugo-theme-codex"
+---
+```
+
+### Configuring Social Icons
+
+Social Icons are optional. As of right now we support Twitter and GitHub, but more can be supported in the future. To show any of these icons, just provide the value in the `[params]` section of `config.toml`.
+
+```toml
+# config.toml
 
 [params]
-
-  name = "Codex"
-  description = "A minimal blog theme for hugo."
   twitter = "hugo-theme-codex"
   github = "jakewies/hugo-theme-codex"
 ```
 
-1. `name`: This is the heading on the `/about` page
-2. `description`: This is the subheading on the `/about` page
-3. `twitter`: Your Twitter handle without the @ symbol (optional)
-4. `github`: Your GitHub handle without the @ symbol (optional)
+If either of these options are given, `hugo-theme-codex` will render the social icon in the footer.
 
-## Overriding / Customizing
+See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
+
+### Creating a blog post
+
+You can create a new blog post page by going to the root of your project and typing:
+
+```
+hugo new blog/:blog-post.md
+```
+
+Where `:blog-post.md` is the name of the file of your new post.
+
+### Taxonomies
+
+Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.
+
+
+## Future Updates & Contributing
 
 Right now the way to customize the theme is not very user-friendly. That is the first thing to work on. If you get curious just hop into the theme directory and go exploring through the code. It's not too complicated what's going on.
