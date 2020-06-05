@@ -2,34 +2,29 @@
 
 A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
-## What this theme is
+An about page 👋🏻 <br>
+A blog 📝
 
-- An about page and a blog. No more. No less. 
-- Blog posts can be tagged
-- You can view all blog posts that a specific tag by going to /tags/:tag-name
-
-### Getting Started
-
-1. Start a new `hugo` site
+**1. Start a new `hugo` site**
 
 ```
 hugo new site my-new-site
 cd my-new-site
 ```
 
-2. Initialize project with `git`
+**2. Initialize project with `git`**
 
 ```
 git init
 ```
 
-3. Add `hugo-theme-codex` as a submodule
+**3. Add `hugo-theme-codex` as a submodule**
 
 ```
 git add submodule https://github.com/jakewies/hugo-theme-codex themes/codex
 ```
 
-4. List `"codex"` as the name of your theme in `config.toml`
+**4. List `"codex"` as the name of your theme in `config.toml`**
 
 ```toml
 # config.toml
