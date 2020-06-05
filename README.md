@@ -6,9 +6,7 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
 - An about page and a blog. No more. No less. 
 - Blog posts can be tagged
-- Tag pages can
-
-Right now the way to customize the theme is not very user-friendly. That is the first thing to work on.
+- You can view all blog posts that a specific tag by going to /tags/:tag-name
 
 ## Archetypes
 
@@ -23,8 +21,6 @@ Where `post.md` is the name of your new post.
 ## Configuration
 
 There are a few configuration parameters you can add in your `config.toml` to customize the theme:
-
-
 
 ```toml
 # config.toml
@@ -43,3 +39,6 @@ There are a few configuration parameters you can add in your `config.toml` to cu
 3. `twitter`: Your Twitter handle without the @ symbol (optional)
 4. `github`: Your GitHub handle without the @ symbol (optional)
 
+## Overriding / Customizing
+
+Right now the way to customize the theme is not very user-friendly. That is the first thing to work on. If you get curious just hop into the theme directory and go exploring through the code. It's not too complicated what's going on.
