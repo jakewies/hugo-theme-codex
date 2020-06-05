@@ -51,6 +51,8 @@ handle: "hugo-theme-codex"
 ---
 ```
 
+See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
+
 ### Configuring Social Icons
 
 Social Icons are optional. As of right now we support Twitter and GitHub, but more can be supported in the future. To show any of these icons, just provide the value in the `[params]` section of `config.toml`.
