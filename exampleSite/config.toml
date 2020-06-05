@@ -8,6 +8,12 @@ languageCode = "en-us"
 theme = "hugo-theme-codex"
 themesDir = "../../"
 
+
+
 [params]
-  twitter = "hugo-theme-codex"
-  github = "jakewies/hugo-theme-codex"
+  # This will show the twitter icon which will link to twitter.com/your-twitter-handle
+  # You can omit the @ symbol
+  twitter = "your-twitter-handle"
+  # This will show the github icon which will link to github.com/your-github-handle
+  # You can omit the @ symbol
+  github = "your-github-handle"
