@@ -1,3 +1,3 @@
 ## Codex
 
-A minimal blog theme built for [Hugo](https://gohugo.io/) 🔥
+A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
