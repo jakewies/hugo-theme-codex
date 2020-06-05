@@ -1,11 +1,11 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Codex Gohugo Theme"
+name = "Codex"
 license = "MIT"
-licenselink = "https://github.com/jakewies/gohugo-theme-codex/blob/master/LICENSE"
+licenselink = "https://github.com/jakewies/hugo-theme-codex/blob/master/LICENSE"
 description = "A minimal blog theme for hugo"
-homepage = "https://github.com/jakewies/gohugo-theme-codex"
+homepage = "https://github.com/jakewies/hugo-theme-codex"
 tags = ["website", "starter", "blog"]
 features = ["blog"]
 min_version = "0.1.0"

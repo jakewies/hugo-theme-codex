@@ -1,5 +1,3 @@
-## gohugo-theme-codex
+## Codex
 
-- Built with [Hugo](https://gohugo.io/) 🔥
--  [Gulp](https://gulpjs.com/) as a build tool 🍹
-- Styles in [Stylus](http://stylus-lang.com/) 💅🏻
+A minimal blog theme built for [Hugo](https://gohugo.io/) 🔥

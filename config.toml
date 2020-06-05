@@ -1,16 +1,16 @@
 # OVERRIDE #
 
 languageCode = "en-us"
-title = "Codex GoHugo Theme"
+title = "Codex"
 baseURL = "https://example.org/"
 copyright = "© {year}"
 
 [params]
 
   name = "Codex"
-  description = "A minimal blog theme for gohugo."
-  twitter = "gohugo-theme-codex"
-  github = "jakewies/gohugo-theme-codex"
+  description = "A minimal blog theme for hugo."
+  twitter = "hugo-theme-codex"
+  github = "jakewies/hugo-theme-codex"
 
 # OVERRIDE #
 
