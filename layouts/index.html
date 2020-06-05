@@ -7,13 +7,12 @@
 <div class="splash-container">
   <div class="splash">
     
-    <!-- Replace MEEEEE -->
-    <h1>Hi, I'm {{ .Site.Params.name }}<span class="fancy">.</span></h1>
-    {{ if isset .Site.Params "twitter" }}
-    <span class="handle">@{{ .Site.Params.twitter }}</span>
+    <h1>{{ .Params.heading }}<span class="fancy">.</span></h1>
+    {{ if isset .Params "handle" }}
+    <span class="handle">@{{ .Params.handle }}</span>
     {{ end }}
     <h2>
-      {{ .Site.Params.description }}
+      {{ .Params.subheading }}
     </h2>
     <!-- Replace MEEEEE -->
 

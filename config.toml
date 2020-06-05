@@ -6,9 +6,6 @@ baseURL = "https://example.org/"
 copyright = "© {year}"
 
 [params]
-
-  name = "Codex"
-  description = "A minimal blog theme for hugo."
   twitter = "hugo-theme-codex"
   github = "jakewies/hugo-theme-codex"
 
@@ -16,12 +13,19 @@ copyright = "© {year}"
 
 # DONT OVERRIDE #
 
-preserveTaxonomyNames = true
-
 [[menu.main]]
     identifier = "about"
     name = "about"
+    title = "About"
     url = "/"
+
+[[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "Blog"
+    url = "/blog"
+
+preserveTaxonomyNames = true
 
 [taxonomies]
   tag = "tags"
