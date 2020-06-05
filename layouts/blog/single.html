@@ -13,6 +13,9 @@
   </header>
   <article class="post__content">
     {{ partial "anchored-headings.html" .Content }}
+    {{ if or .Params.math .Site.Params.math }}
+      {{ partial "math.html" . }}
+    {{ end }}
   </article>
   {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
 </div>
