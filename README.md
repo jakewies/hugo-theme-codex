@@ -2,8 +2,6 @@
 
 A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
-### What this theme is
-
 - An about page 👋🏻 and a blog 📝
 - Blog posts can be tagged 🏷
 
