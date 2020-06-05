@@ -1,6 +1,10 @@
 title = "Codex"
 baseURL = "https://example.com"
 languageCode = "en-us"
+
+# This is just to get the exampleSite to work with the theme 
+# in this repository. Don't mimic this. When using the theme
+# you should place it in themes/codex and list theme = "codex"
 theme = "hugo-theme-codex"
 themesDir = "../../"
 
