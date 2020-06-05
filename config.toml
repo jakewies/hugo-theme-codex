@@ -18,6 +18,11 @@ copyright = "© {year}"
 
 preserveTaxonomyNames = true
 
+[[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/"
+
 [taxonomies]
   tag = "tags"
 
