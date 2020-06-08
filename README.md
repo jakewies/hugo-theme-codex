@@ -95,6 +95,10 @@ The theme supports KaTeX which renders math typesetting in markdown document. Si
 
 Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.
 
+### Favicon
+
+To update favicon of the site, replace the one in `static/favicon.ico` with your own.
+
 ## Future Updates & Contributing
 
 Right now the way to customize the theme is not very user-friendly. That is the first thing to work on. If you get curious just hop into the theme directory and go exploring through the code. It's not too complicated what's going on.
