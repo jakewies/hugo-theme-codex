@@ -66,6 +66,19 @@ If either of these options are given, `hugo-theme-codex` will render the social 
 
 See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
 
+You can also create additional social icons by replicating the code in `partials/social-icons.html`. For example, to add an email social icon, you can add the follwing:
+
+```html
+<a class="social-icons__icon social-icons__icon--email" href="mailto:youremail@example.com"></a>
+```
+Note that you also need to add the following css in corresponding css files where social icons are displayed, i.e. `about.css` and `post.css`:
+
+```css
+.social-icons__icon--email {
+  background-image: url("/icons/email.svg");
+}
+```
+
 ### Creating a blog post
 
 You can create a new blog post page by going to the root of your project and typing:
@@ -76,9 +89,15 @@ hugo new blog/:blog-post.md
 
 Where `:blog-post.md` is the name of the file of your new post.
 
+The theme supports KaTeX which renders math typesetting in markdown document. Simply turn on by `math: true` in your post.
+
 ### Tags
 
 Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.
+
+### Favicon
+
+To update favicon of the site, replace the one in `static/favicon.ico` with your own.
 
 ## Future Updates & Contributing
 
