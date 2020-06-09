@@ -8,7 +8,7 @@ description = "A minimal blog theme for hugo"
 homepage = "https://github.com/jakewies/hugo-theme-codex"
 tags = ["website", "starter", "blog"]
 features = ["blog"]
-min_version = "0.1.0"
+min_version = "0.72.0"
 
 [author]
   name = "Jake Wiesler"
