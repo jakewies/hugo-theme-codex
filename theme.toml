@@ -3,7 +3,7 @@
 
 name = "Codex"
 license = "MIT"
-licenselink = "https://github.com/jakewies/hugo-theme-codex/blob/master/LICENSE"
+licenselink = "https://github.com/jakewies/hugo-theme-codex/blob/master/LICENSE.md"
 description = "A minimal blog theme for hugo"
 homepage = "https://github.com/jakewies/hugo-theme-codex"
 tags = ["website", "starter", "blog"]
