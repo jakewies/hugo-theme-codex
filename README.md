@@ -23,7 +23,7 @@ git init
 **3. Add `hugo-theme-codex` as a submodule**
 
 ```
-git submodule add https://github.com/jakewies/hugo-theme-codex themes/codex
+git submodule add https://github.com/jakewies/hugo-theme-codex.git themes/codex
 ```
 
 **4. List `"codex"` as the name of your theme in `config.toml`**
@@ -34,7 +34,13 @@ git submodule add https://github.com/jakewies/hugo-theme-codex themes/codex
 theme = "codex"
 ```
 
-See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
+**5. Start the server**
+
+```
+hugo server -D
+```
+
+You should now see some default content. 
 
 ### Configuring the Home Page
 
