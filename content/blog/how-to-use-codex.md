@@ -1,11 +1,17 @@
-## Codex
+---
+title: "How To Use Codex"
+date: 2020-06-04T09:19:29-04:00
+slug: "how-to-use-codex"
+description: "Explaining how to get up and running with the Codex theme for Hugo."
+keywords: ["gohugo", "hugo", "go", "blog"]
+draft: false
+tags: ["hugo"]
+stylesheet: "post.css"
+---
 
-A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
+[Codex](https://github.com/jakewies/hugo-theme-codex) is a minimal blog theme for [Hugo](https://gohugo.io/).
 
-- An about page 👋🏻 and a blog 📝
-- Blog posts can be tagged 🏷
-
-### Getting Started
+## Getting Started
 
 **1. Start a new `hugo` site**
 
@@ -28,7 +34,7 @@ git submodule add https://github.com/jakewies/hugo-theme-codex.git themes/codex
 
 **4. List `"codex"` as the name of your theme in `config.toml`**
 
-```toml
+```
 # config.toml
 
 theme = "codex"
@@ -46,7 +52,7 @@ You should now see some default content.
 
 The site's home page can be configured by creating a `content/_index.md` file. This file can use the following frontmatter:
 
-```md
+```
 ---
 heading: "Hi, I'm Codex"
 subheading: "A minimal blog theme for hugo."
@@ -60,7 +66,7 @@ If you would rather override the about page's layout with your own, you can do s
 
 Social Icons are optional. As of right now we support Twitter and GitHub, but more can be supported in the future. To show any of these icons, just provide the value in the `[params]` section of `config.toml`.
 
-```toml
+```
 # config.toml
 
 [params]
@@ -74,12 +80,12 @@ See the contents of the [example site](https://github.com/jakewies/hugo-theme-co
 
 You can also create additional social icons by replicating the code in `partials/social-icons.html`. For example, to add an email social icon, you can add the follwing:
 
-```html
+```
 <a class="social-icons__icon social-icons__icon--email" href="mailto:youremail@example.com"></a>
 ```
 Note that you also need to add the following css in corresponding css files where social icons are displayed, i.e. `about.css` and `post.css`:
 
-```css
+```
 .social-icons__icon--email {
   background-image: url("/icons/email.svg");
 }
@@ -105,6 +111,3 @@ Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can vi
 
 To update favicon of the site, replace the one in `static/favicon.ico` with your own.
 
-## Future Updates & Contributing
-
-Right now the way to customize the theme is not very user-friendly. That is the first thing to work on. If you get curious just hop into the theme directory and go exploring through the code. It's not too complicated what's going on.
