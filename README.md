@@ -78,6 +78,21 @@ Where `:blog-post.md` is the name of the file of your new post.
 
 The theme supports KaTeX which renders math typesetting in markdown document. Simply turn on by `math: true` in your post.
 
+### Adding a new section menu
+
+In your site's `config.toml`, add a new menu definition for say, "photos":
+```toml
+# config.toml
+
+[[menu.main]]
+    identifier = "photos"
+    name = "photos"
+    title = "Photos"
+    url = "/photos"
+```
+
+Then, put your posts under "content/photos". 
+
 ### Tags
 
 Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.

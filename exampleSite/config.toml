@@ -30,15 +30,16 @@ themesDir = "../../"
 
 # Controls the navigation
 [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "About"
-    url = "/"
-  [[menu.main]]
-    identifier = "blog"
-    name = "blog"
-    title = "Blog"
-    url = "/blog"
+  identifier = "about"
+  name = "about"
+  title = "About"
+  url = "/"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "blog"
+  title = "Blog"
+  url = "/blog"
 
 
 
