@@ -40,7 +40,7 @@ theme = "codex"
 hugo server -D
 ```
 
-**Note: If you are seeing a blank page it is probably because you have nothing in your `content/` directory. Read on th fix that.**
+**Note: If you are seeing a blank page it is probably because you have nothing in your `content/` directory. Read on to fix that.**
 
 ### Configuring the Home Page
 
