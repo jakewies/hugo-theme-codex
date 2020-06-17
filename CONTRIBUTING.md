@@ -10,23 +10,16 @@ First off, thank you for your time and effort! This project is not very large an
 
 ## Getting started
 
-The first thing you'll want to do is clone the repository:
-
-```bash
-# https
-git clone https://github.com/jakewies/hugo-theme-codex.git
-
-# ssh
-git clone git@github.com:jakewies/hugo-theme-codex.git
-```
-
-Next, you'll want to install dependencies with `yarn`:
+1. Fork and clone the repository
+2. Install dependencies:
 
 ```bash
 cd hugo-theme-codex
 
 yarn install
 ```
+
+## Scripts
 
 There are 3 npm scripts that can be used for development purposes:
 
