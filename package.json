@@ -1,0 +1,34 @@
+{
+  "name": "hugo-theme-codex",
+  "version": "0.2.0",
+  "author": "Jake Wiesler",
+  "description": "A minimal blog theme for Hugo",
+  "license": "MIT",
+  "scripts": {
+    "develop": "hugo server -s ./exampleSite/",
+    "watch:assets": "gulp --env=dev",
+    "build:assets": "gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylus": "^2.7.0",
+    "gulp-util": "^3.0.8"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ],
+  "homepage": "https://github.com/jakewies/hugo-theme-codex",
+  "bugs": "https://github.com/jakewies/hugo-theme-codex/issues",
+  "keywords": [
+    "hugo",
+    "blog",
+    "go"
+  ]
+}
