@@ -5,39 +5,20 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 - An about page 👋🏻 and a blog 📝
 - Blog posts can be tagged 🏷
 
-### Getting Started
+### Getting started
 
-**1. Start a new `hugo` site**
+At the root of your Hugo project, run:
 
-```
-hugo new site my-new-site
-cd my-new-site
-```
-
-**2. Initialize project with `git`**
-
-```
-git init
-```
-
-**3. Add `hugo-theme-codex` as a submodule**
-
-```
+```bash
 git submodule add https://github.com/jakewies/hugo-theme-codex.git themes/codex
 ```
 
-**4. List `"codex"` as the name of your theme in `config.toml`**
+Next, copy the contents of the [default `config.toml`](https://github.com/jakewies/hugo-theme-codex/blob/master/exampleSite/config.toml) to your site's `config.toml`. Make sure to read all the comments, as there a few nuances with Hugo themes that require some changes to that file. 
 
-```toml
-# config.toml
-
-theme = "codex"
-```
-
-**5. Start the server**
+Finally, run:
 
 ```
-hugo server -D
+hugo server -D 
 ```
 
 **Note: If you are seeing a blank page it is probably because you have nothing in your `content/` directory. Read on to fix that.**
