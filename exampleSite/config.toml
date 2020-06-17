@@ -1,19 +1,44 @@
-title = "Codex"
-baseURL = "https://example.com"
+# Override these settings with your own
 languageCode = "en-us"
+baseURL = "https://example.org/"
+copyright = "© {year}"
 
-# This is just to get the exampleSite to work with the theme 
-# in this repository. Don't mimic this. When using the theme
-# you should place it in themes/codex and list theme = "codex"
-theme = "hugo-theme-codex"
-themesDir = "../../"
+# The value "hugo-theme-codex" is only to get the exampleSite
+# to work in this repo. Change to whatever name you gave the theme
+# when you added it. If you followed the README, you should have 
+# added the theme using the name "codex".
+theme = "hugo-theme-codex" 
 
+# REMOVE THIS!
+# This is only to get the exampleSite to work in this repo.
+themesDir = "../../" 
 
-
+# Optional params
 [params]
-  # This will show the twitter icon which will link to twitter.com/your-twitter-handle
-  # You can omit the @ symbol
-  twitter = "your-twitter-handle"
-  # This will show the github icon which will link to github.com/your-github-handle
-  # You can omit the @ symbol
-  github = "your-github-handle"
+  # Show Twitter icon linking to twitter.com/your-twitter-handle
+  twitter = "your-twitter-handle" # omit @
+  # Show Github icon linking to github.com/your-github-handle
+  github = "your-github-handle" # omit @
+
+# This disables Hugo's default syntax highlighting in favor
+# of prismjs. If you wish to use Hugo's default syntax highlighting
+# over prismjs, remove this. You will also need to remove the prismjs
+# vendor script in layouts/blog/single.html.
+[markup]
+  [markup.highlight]
+    codeFences = false
+
+# Controls the navigation
+[[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "About"
+    url = "/"
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "Blog"
+    url = "/blog"
+
+
+
