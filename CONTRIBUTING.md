@@ -7,6 +7,7 @@ First off, thank you for your time and effort! This project is not very large an
 - Built with [Hugo](https://gohugo.io/) 🔥
 - [Gulp](https://gulpjs.com/) as a build tool 🍹
 - Styles in [Stylus](http://stylus-lang.com/) 💅🏻
+- [Yarn](https://yarnpkg.com/) as a package manager 📦
 
 ## Getting started
 
@@ -28,7 +29,7 @@ yarn develop
 ```
 
 This command will start a hugo webserver and serve the `exampleSite`. This works well because the example site uses `hugo-theme-codex`, so any changes
-we make to the codebase can be viewed in real time.
+we make to the codebase can be viewed in real time. Make sure you change `"hugo-theme-codex"` in `exampleSite/config.toml` to the name you gave the theme when you added it. If you followed the README, you should have added the theme using the name `"codex"`. 
 
 ```bash
 yarn watch:assets
