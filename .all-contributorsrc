@@ -6,6 +6,16 @@
   "commit": false,
   "contributors": [
     {
+      "login": "jakewies",
+      "name": "Jake Wiesler",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12075916?v=4",
+      "profile": "https://www.jakewiesler.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
       "login": "chuxinh",
       "name": "Chuxin Huang",
       "avatar_url": "https://avatars2.githubusercontent.com/u/30974572?v=4",
