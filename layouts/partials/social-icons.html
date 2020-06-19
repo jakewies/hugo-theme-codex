@@ -2,7 +2,28 @@
   {{ if isset .Site.Params "twitter" }}
   <a class="social-icons__icon social-icons__icon--twitter" href="https://twitter.com/{{ .Site.Params.twitter }}"></a>
   {{ end }}
+  <a class="lock hvr-pop" href="#">
+    <img class="social-icons__icon social-icons__icon--resume icon-unlock" src="/icons/resume.svg">
+    <img class="social-icons__icon social-icons__icon--resume-c icon-lock" src="/icons/resume-c.svg">
+  </a>
   {{ if isset .Site.Params "github" }}
-  <a class="social-icons__icon social-icons__icon--github" href="https://github.com/{{ .Site.Params.github }}"></a>
+  <a class="lock hvr-wobble-skew" href="https://github.com/{{ .Site.Params.github }}">
+  <img class="social-icons__icon social-icons__icon--github icon-unlock" src="/icons/github.svg">
+  <img class="social-icons__icon social-icons__icon--github-c icon-lock" src="/icons/github-c.svg">
+  </a>
   {{ end }}
+  {{ if isset .Site.Params "linkedin" }}
+  <a class="lock hvr-grow-rotate" href="https://linkedin.com/in/{{ .Site.Params.linkedin }}">
+    <img class="social-icons__icon social-icons__icon--linkedin icon-unlock" src="/icons/linkedin.svg">
+    <img class="social-icons__icon social-icons__icon--linkedin-c icon-lock" src="/icons/linkedin-c.svg">
+  </a>
+  {{ end }}
+  <a class="lock hvr-wobble-horizontal" href="mailto:senik456@gmail.com">
+    <img class="social-icons__icon social-icons__icon--gmail icon-unlock" src="/icons/gmail.svg">
+    <img class="social-icons__icon social-icons__icon--gmail-c icon-lock" src="/icons/gmail-c.svg">
+  </a>
+  <a class="lock hvr-buzz-out " href="https://www.youtube.com/channel/UC1zkDF2LSa3yu9vxsreym_w/featured?view_as=subscriber">
+    <img class="social-icons__icon social-icons__icon--youtube icon-unlock" src="/icons/youtube.svg">
+    <img class="social-icons__icon social-icons__icon--youtube-c icon-lock" src="/icons/youtube-c.svg">
+  </a>
 </div>

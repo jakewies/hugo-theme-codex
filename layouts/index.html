@@ -7,9 +7,9 @@
 <div class="splash-container">
   <div class="splash">
     
-    <h1>{{ .Params.heading }}<span class="fancy">.</span></h1>
+    <h1>{{ .Params.heading }} <span class="wave">👋</span></h1>
     {{ if isset .Params "handle" }}
-    <span class="handle">@{{ .Params.handle }}</span>
+    <span class="handle">{{ .Params.handle }}</span>
     {{ end }}
     <h2>
       {{ .Params.subheading }}
@@ -21,3 +21,5 @@
 </div>
 
 {{ end }}
+
+
