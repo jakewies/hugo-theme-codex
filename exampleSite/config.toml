@@ -1,7 +1,7 @@
 # Override these settings with your own
 languageCode = "en-us"
 baseURL = "https://example.org/"
-copyright = "© {year}"
+copyright = "© {2020}"
 
 # The value "hugo-theme-codex" is only to get the exampleSite
 # to work in this repo. Change to whatever name you gave the theme
