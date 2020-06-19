@@ -7,6 +7,7 @@ First off, thank you for your time and effort! This project is not very large an
 - Built with [Hugo](https://gohugo.io/) 🔥
 - [Gulp](https://gulpjs.com/) as a build tool 🍹
 - Styles in [Stylus](http://stylus-lang.com/) 💅🏻
+- [Yarn](https://yarnpkg.com/) as a package manager 📦
 
 ## Getting started
 
