@@ -24,6 +24,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jakewies",
+      "name": "Jake Wiesler",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12075916?v=4",
+      "profile": "https://www.jakewiesler.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
