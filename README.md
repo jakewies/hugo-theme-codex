@@ -94,7 +94,11 @@ hugo new blog/:blog-post.md
 
 Where `:blog-post.md` is the name of the file of your new post.
 
-The theme supports KaTeX which renders math typesetting in markdown document. Simply turn on by `math: true` in your post.
+Optional parameters for your post, added by the theme:
+
+* `math:true` enables math renderig with KaTeX
+* `toc: true` adds a table of contents to your post
+
 
 ### Adding a new section menu
 
