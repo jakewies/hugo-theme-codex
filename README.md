@@ -118,7 +118,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.chuxinhuang.com/"><img src="https://avatars2.githubusercontent.com/u/30974572?v=4" width="100px;" alt=""/><br /><sub><b>Chuxin Huang</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=chuxinh" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.chuxinhuang.com/"><img src="https://avatars2.githubusercontent.com/u/30974572?v=4" width="100px;" alt=""/><br /><sub><b>Chuxin Huang</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=chuxinh" title="Documentation">📖</a> <a href="https://github.com/jakewies/hugo-theme-codex/commits?author=chuxinh" title="Code">💻</a> <a href="#design-chuxinh" title="Design">🎨</a></td>
   </tr>
 </table>
 
