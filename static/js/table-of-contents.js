@@ -24,3 +24,12 @@ window.addEventListener('DOMContentLoaded', () => {
 		observer.observe(section);
 	});
 });
+
+// Post title doesn't get parsed as it is not part of the content file
+(function addPostTitle2ToC() {
+	var toc = document.getElementById('TableOfContents');
+	if (!toc) return;
+	var title = document.getElementById("post__title").innerText;
+	var ul = toc.querySelector('ul');
+	ul.outerHTML = `<ul><li><a href="#post__title" class="active">${title}</a>${ul.outerHTML}</li></ul>`;
+})();
