@@ -4,7 +4,7 @@ date: 2020-06-04T09:19:29-04:00
 slug: "example-post"
 description: "This is an example post for hugo-theme-codex."
 keywords: ["gohugo", "hugo", "go", "blog"]
-draft: true
+draft: false
 tags: ["hugo"]
 stylesheet: "post.css"
 ---

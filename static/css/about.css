@@ -342,6 +342,11 @@ main {
     }
 }
 
+.fancy {
+    font-weight: bold;
+    color: lightskyblue;
+}
+
 /* Change icons */
 .lock:hover .icon-unlock,
 .lock .icon-lock {
