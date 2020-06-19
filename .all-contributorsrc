@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "chuxinh",
+      "name": "Chuxin Huang",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/30974572?v=4",
+      "profile": "https://www.chuxinhuang.com/",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "hugo-theme-codex",
+  "projectOwner": "jakewies",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
