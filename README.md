@@ -1,7 +1,4 @@
 ## Codex
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
@@ -109,6 +106,10 @@ To update favicon of the site, replace the one in `static/favicon.ico` with your
 Right now the way to customize the theme is not very user-friendly. That is the first thing to work on. If you get curious just hop into the theme directory and go exploring through the code. It's not too complicated what's going on.
 
 ## Contributors ✨
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
