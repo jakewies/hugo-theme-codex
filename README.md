@@ -101,9 +101,9 @@ Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can vi
 
 To update favicon of the site, replace the one in `static/favicon.ico` with your own.
 
-## Future Updates & Contributing
+## Contributing
 
-Right now the way to customize the theme is not very user-friendly. That is the first thing to work on. If you get curious just hop into the theme directory and go exploring through the code. It's not too complicated what's going on.
+Check out the [CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-codex/blob/master/CONTRIBUTING.md) for more info on how you can contribute!
 
 ## Contributors ✨
 
