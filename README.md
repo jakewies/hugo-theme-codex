@@ -108,7 +108,7 @@ Right now the way to customize the theme is not very user-friendly. That is the 
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -120,6 +120,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.chuxinhuang.com/"><img src="https://avatars2.githubusercontent.com/u/30974572?v=4" width="100px;" alt=""/><br /><sub><b>Chuxin Huang</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=chuxinh" title="Documentation">📖</a> <a href="https://github.com/jakewies/hugo-theme-codex/commits?author=chuxinh" title="Code">💻</a> <a href="#design-chuxinh" title="Design">🎨</a></td>
     <td align="center"><a href="https://kentnek.com"><img src="https://avatars1.githubusercontent.com/u/7024160?v=4" width="100px;" alt=""/><br /><sub><b>Kent</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=kentnek" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.jakewiesler.com"><img src="https://avatars1.githubusercontent.com/u/12075916?v=4" width="100px;" alt=""/><br /><sub><b>Jake Wiesler</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=jakewies" title="Code">💻</a> <a href="#design-jakewies" title="Design">🎨</a></td>
   </tr>
 </table>
 
