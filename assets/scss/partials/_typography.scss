@@ -20,19 +20,10 @@ html {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: $leading;
   margin-bottom: 0;
   line-height: $leading;
-
-  code {
-
-  }
 }
 
 h1 {
@@ -46,15 +37,15 @@ h2 {
 }
 
 h3 {
-  font-size: $scale / 2 * 1rem;
+  font-size: ($scale / 1.2) * 1rem;
 }
 
 h4 {
-  font-size: $scale / 3 * 1rem;
+  font-size: ($scale / 1.44) * 1rem;
 }
 
 h5 {
-  font-size: $scale / 4 * 1rem;
+  font-size: ($scale / 1.728) * 1rem;
 }
 
 p {
