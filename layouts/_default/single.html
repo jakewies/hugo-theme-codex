@@ -1,7 +1,6 @@
-{{ define "stylesheets" }}
-<link rel="stylesheet" href="/css/post.css" /> 
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_path" "scss/pages/post.scss" }}
 {{ end }}
-
 
 {{ define "main" }}
 <div class="post">

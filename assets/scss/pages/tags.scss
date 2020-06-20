@@ -1,0 +1,27 @@
+@import '../main';
+@import '../partials/post-list';
+
+.tag__header {
+  align-items: baseline;
+  display: flex;
+  margin: 0 auto 3rem;
+
+  a, .separator {
+    color: $grey;
+    font-size: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .separator {
+    align-self: center;
+    margin: 0 5px;
+  }
+
+  .tag__term {
+    margin: 0;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,79 @@
+@import 'burger';
+
+.nav {
+  font-size: 16px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  visibility: hidden;
+  z-index: 1;
+
+  @media screen and (min-width: $medium) {
+    display: block;
+    visibility: visible;
+    padding-top: 3em;
+    width: $navWidth;
+  }
+}
+
+.nav--active .nav {
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+}
+
+.nav__list {
+  text-align: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+
+  @media screen and (min-width: $medium) {
+    width: auto;
+  }
+
+
+  @media screen and (max-width: $medium - 1) {
+    transform: translateY(-25px);
+    opacity: 0;
+    .nav--active & {
+      transform: translateY(0);
+      opacity: 1;
+      transition: all 500ms ease;
+    }
+  }
+}
+
+.nav__list li {
+  margin-bottom: 3em;
+  line-height: 1.5em;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $medium) {
+    margin-bottom: 1.75em;
+  }
+}
+
+.nav__list a {
+  color: $grey;
+  text-decoration: none;
+  font-size: 2em;
+
+  &.active {
+    color: $black;
+  }
+
+  &:hover {
+    color: $black;
+  }
+
+  @media screen and (min-width: $medium) {
+    font-size: 1em;
+  }
+}

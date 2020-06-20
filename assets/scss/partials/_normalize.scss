@@ -1,0 +1,14 @@
+button,
+button[type="button"],
+button[type="reset"],
+button[type="submit"] {
+  -webkit-appearance: button;
+}
+
+input,
+input[type=text],
+input[type=email] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

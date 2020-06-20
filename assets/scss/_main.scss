@@ -1,0 +1,23 @@
+@import 'partials/normalize';
+@import 'partials/vars';
+@import 'partials/reset';
+@import 'partials/typography';
+@import 'partials/nav';
+@import 'partials/social-icons';
+
+body.nav--active {
+  overflow: hidden;
+}
+
+main {
+  padding: 3rem 1.5rem;
+
+
+  @media screen and (min-width: $medium) {
+    padding-left: calc(1.5rem + #{$navWidth});
+  }
+
+  @media screen and (max-width: $medium - 1) {
+    padding-top: calc(3rem + #{$burgerContainerHeight});
+  }
+}

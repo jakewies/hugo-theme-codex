@@ -5,20 +5,7 @@
   "description": "A minimal blog theme for Hugo",
   "license": "MIT",
   "scripts": {
-    "develop": "hugo server -s ./exampleSite/",
-    "watch:assets": "gulp --env=dev",
-    "build:assets": "gulp build"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-if": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-stylus": "^2.7.0",
-    "gulp-util": "^3.0.8"
+    "develop": "hugo server -s ./exampleSite/"
   },
   "browserslist": [
     "last 2 version",

@@ -26,7 +26,17 @@
   {{ end }}
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-  {{ block "stylesheets" . }} {{ end }}
+
+  <!-- Styles -->
+  {{ block "styles" . }} {{ end }} <!-- Get "style_path" variable from "styles" block -->
+  {{ $base_styles := .Scratch.Get "style_path" | default "scss/pages/about.scss" }}
+  {{ $custom_styles := "scss/custom.scss" }}
+  
+  {{ range (slice $base_styles $custom_styles) }}
+    {{ $style := resources.Get . | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"/>
+  {{ end }}
+  
   {{ range .AlternativeOutputFormats }} 
   {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }} 
   {{ end }} 
@@ -45,7 +55,8 @@
 
   {{ block "footer" . }} {{ end }}
 
-  <script src="/js/index.js"></script>
+  {{ $script := resources.Get "js/index.js" | minify | fingerprint }}
+  <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity | safeHTMLAttr }}" crossorigin="anonymous"></script>
   {{ block "scripts" . }} {{ end }}
 </body>
 
