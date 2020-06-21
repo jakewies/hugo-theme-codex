@@ -1,5 +1,5 @@
 {{ define "styles" }}
-    {{ $.Scratch.Set "style_path" "scss/pages/tags.scss" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/tags.scss" "dest" "css/tags.css") }}
 {{ end }}
 
 {{ define "main" }} 

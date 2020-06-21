@@ -28,12 +28,14 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
   <!-- Styles -->
-  {{ block "styles" . }} {{ end }} <!-- Get "style_path" variable from "styles" block -->
-  {{ $base_styles := .Scratch.Get "style_path" | default "scss/pages/about.scss" }}
-  {{ $custom_styles := "scss/custom.scss" }}
+  {{ block "styles" . }} {{ end }} <!-- Get "style_opts" variable from "styles" block -->
+  {{ $base_styles_opts := .Scratch.Get "style_opts" | default (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
+  {{ $custom_styles_opts := (dict "src" "scss/custom.scss" "dest" "css/custom.css") }}
   
-  {{ range (slice $base_styles $custom_styles) }}
-    {{ $style := resources.Get . | toCSS | minify | fingerprint }}
+  {{ $current_page := . }}
+  
+  {{ range (slice $base_styles_opts $custom_styles_opts) }}
+    {{ $style := resources.Get .src | resources.ExecuteAsTemplate .dest $current_page | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"/>
   {{ end }}
   
