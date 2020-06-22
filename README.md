@@ -4,12 +4,19 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
 - An about page 👋🏻 and a blog 📝
 - Blog posts can be tagged 🏷
-- Mathematical notations are supported with KaTex
-- Sass/SCSS for styling
+- Mathematical notations are supported with KaTex 📐
+- Sass/SCSS for styling ✨
 
 ### Prerequisites
 
-Hugo extended version (for Sass/SCSS support).
+Hugo **extended version** (for Sass/SCSS support).
+
+For macOS users, the extended version is installed by default if you use `homebrew`.
+
+For Windows users, you can install with choco:
+```
+choco install hugo-extended -confirm
+```
 
 ### Getting started
 
