@@ -4,6 +4,12 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
 - An about page 👋🏻 and a blog 📝
 - Blog posts can be tagged 🏷
+- Mathematical notations are supported with KaTex
+- Sass/SCSS for styling
+
+### Prerequisites
+
+Hugo extended version (for Sass/SCSS support).
 
 ### Getting started
 
@@ -92,6 +98,33 @@ In your site's `config.toml`, add a new menu definition for say, "photos":
 ```
 
 Then, put your posts under "content/photos". 
+
+### Custom styling
+
+In your site's folder, create `assets/scss/custom.scss` and put your custom styling there. For example, the snippet below 
+changes the dot's color on your About page to blue:
+
+```scss
+// custom.scss
+.fancy {
+  color: #1e88e5;
+}
+```
+
+You can even use Hugo variables/params in your custom styles too!
+
+```scss
+// custom.scss
+.fancy {
+  color: {{ .Site.Params.colors.fancy | default "#1e88e5" }}
+}
+```
+
+```toml
+# config.toml
+[params.colors]
+    fancy = "#f06292"
+```
 
 ### Tags
 

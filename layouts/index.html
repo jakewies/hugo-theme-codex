@@ -1,5 +1,5 @@
-{{ define "stylesheets" }}
-<link rel="stylesheet" href="/css/about.css" /> 
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
 {{ end }}
 
 {{ define "main" }}

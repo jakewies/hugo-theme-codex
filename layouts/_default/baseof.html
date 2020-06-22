@@ -26,7 +26,19 @@
   {{ end }}
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-  {{ block "stylesheets" . }} {{ end }}
+
+  <!-- Styles -->
+  {{ block "styles" . }} {{ end }} <!-- Get "style_opts" variable from "styles" block -->
+  {{ $base_styles_opts := .Scratch.Get "style_opts" | default (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
+  {{ $custom_styles_opts := (dict "src" "scss/custom.scss" "dest" "css/custom.css") }}
+  
+  {{ $current_page := . }}
+  
+  {{ range (slice $base_styles_opts $custom_styles_opts) }}
+    {{ $style := resources.Get .src | resources.ExecuteAsTemplate .dest $current_page | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"/>
+  {{ end }}
+  
   {{ range .AlternativeOutputFormats }} 
   {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }} 
   {{ end }} 
@@ -45,7 +57,8 @@
 
   {{ block "footer" . }} {{ end }}
 
-  <script src="/js/index.js"></script>
+  {{ $script := resources.Get "js/index.js" | minify | fingerprint }}
+  <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity | safeHTMLAttr }}" crossorigin="anonymous"></script>
   {{ block "scripts" . }} {{ end }}
 </body>
 

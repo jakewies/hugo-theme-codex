@@ -6,4 +6,7 @@ Thumbs.db
 
 # IDEs
 .vscode
+
+# Hugo
+**/resources/_gen
 public/

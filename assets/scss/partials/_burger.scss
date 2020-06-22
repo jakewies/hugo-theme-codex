@@ -1,0 +1,57 @@
+@import "vars";
+
+.burger__container {
+  height: $burgerContainerHeight;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+
+  @media screen and (min-width: $medium) {
+    display: none;
+  }
+}
+
+.burger {
+  position: relative;
+  width: $meatWidth;
+  height: $meatWidth;
+  cursor: pointer;
+}
+
+.burger__meat {
+  position: absolute;
+  width: $meatWidth;
+  height: $meatHeight;
+  background: $black;
+  top: calc(50% - #{$meatHeight} / 2);
+  left: calc(50% - #{$meatWidth} / 2);
+  transition: all 150ms ease-in;
+}
+
+.burger__meat--1 {
+  transform: translateY(-10px);
+}
+
+.burger__meat--2 {
+  width: calc(#{$meatWidth} - 6px);
+}
+
+.burger__meat--3 {
+  transform: translateY(10px);
+}
+
+.nav--active .burger__meat--1 {
+  transform: rotate(45deg);
+}
+
+.nav--active .burger__meat--2 {
+  opacity: 0;
+}
+
+.nav--active .burger__meat--3 {
+  transform: rotate(-45deg);
+}
