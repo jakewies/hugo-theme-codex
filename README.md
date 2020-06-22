@@ -13,7 +13,7 @@ Hugo **extended version** (for Sass/SCSS support).
 
 For macOS users, the extended version is installed by default if you use `homebrew`.
 
-For Windows users, you can install with choco:
+For Windows users, you can install with `choco`:
 ```
 choco install hugo-extended -confirm
 ```
