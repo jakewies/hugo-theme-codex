@@ -77,7 +77,7 @@ You can also create additional social icons by:
       # ...
       reddit = "<url to your reddit>"
    
-      iconTitles = [ ..., "Reddit"]
+      iconTitles = [ "...", "Reddit"]
    ```
 
 Make sure that the icon title must match the icon's file name. If the title contains more than one word, say "My Awesome Site",
