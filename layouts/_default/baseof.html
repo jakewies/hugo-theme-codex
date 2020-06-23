@@ -4,7 +4,7 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
-  <title>{{ .Page.Title }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
