@@ -3,11 +3,13 @@
 {{ end }}
 
 {{ define "main" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
+
 <div class="post">
   <header class="post__header">
     <h1 class="post__title">{{.Title}}</h1>
     <time datetime="{{ .Date }}" class="post__date"
-      >{{ .Date.Format "Jan 2 2006" }}</time
+      >{{ .Date.Format $dateFormat }}</time
     >
   </header>
   <article class="post__content">
