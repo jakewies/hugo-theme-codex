@@ -1,8 +1,15 @@
+{{ $currentPage := . }}
+{{ $icons := .Site.Params.iconOrder | default (slice "Twitter" "GitHub" "Email" "Facebook" "GitLab" "Instagram" "LinkedIn" "YouTube") }}
+
 <div class="social-icons">
-  {{ if isset .Site.Params "twitter" }}
-  <a class="social-icons__icon social-icons__icon--twitter" href="https://twitter.com/{{ .Site.Params.twitter }}"></a>
-  {{ end }}
-  {{ if isset .Site.Params "github" }}
-  <a class="social-icons__icon social-icons__icon--github" href="https://github.com/{{ .Site.Params.github }}"></a>
-  {{ end }}
+  {{ range $icons }}
+    {{ $icon := anchorize . }} 
+    {{ if isset $currentPage.Site.Params $icon }}
+      <a class="social-icons__icon" title="{{ . }}"
+         style="background-image: url(/icons/{{ $icon }}.svg)" 
+         href="{{ index $currentPage.Site.Params $icon }}"
+         target="_blank" rel="noopener">
+      </a>
+    {{ end }}
+  {{ end }}   
 </div>
