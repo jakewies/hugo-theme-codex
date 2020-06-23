@@ -38,6 +38,14 @@ The blockquote element represents content that is quoted from another source, op
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use *Markdown syntax* within a blockquote.
 
+#### Blockquote with attribution
+
+> Simplicity is the ultimate sophistication.
+> — <cite>Leonardo da Vinci[^1]</cite>
+
+[^1]: The above quote is often attributed to Leonardo da Vinci but there is no concrete evidence to support this.
+
+
 ## Tables
 
 Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.

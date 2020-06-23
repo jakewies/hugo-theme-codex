@@ -72,11 +72,34 @@ ol {
 }
 
 blockquote {
+  &::before {
+    position: absolute;
+    content: '\201C';
+
+    font-size: 6em;
+    font-family: 'Roboto', serif;
+    margin-top: 0.10em;;
+    margin-left: -0.2em;
+    
+    z-index: -1;
+    color: darken($white, 7%);
+  }
+  
   margin-top: $leading;
   margin-bottom: $leading;
   line-height: $leading;
-  color: $darkGrey;
-  font-style: italic;
+  color: $black;
+  
+  cite {
+    &::before {
+      content: "— "
+    }
+    
+    font-style: italic;
+    font-size: .95em;
+    color: $darkGrey;
+  }
+
 }
 
 pre {
