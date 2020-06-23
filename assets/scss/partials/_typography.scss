@@ -117,3 +117,7 @@ pre code {
 .lead {
   font-size: $scale * 1rem;
 }
+
+abbr[title] {
+  text-decoration: underline double;
+}

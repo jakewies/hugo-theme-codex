@@ -41,6 +41,10 @@ themesDir = "../../"
 [markup]
   [markup.highlight]
     codeFences = false
+    
+  # Set to false to disallow raw HTML in markdown files
+  [markup.goldmark.renderer]
+      unsafe = true
 
 # Controls the navigation
 [[menu.main]]

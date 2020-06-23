@@ -1,5 +1,6 @@
 @import '../main';
 @import '../partials/github-syntax-highlighting';
+@import '../partials/colors';
 
 .post {
   width: 100%;
@@ -235,4 +236,19 @@ footer {
 .twitter-tweet.twitter-tweet-rendered {
   margin: 1.5rem auto !important;
   width: 375px !important;
+}
+
+table {
+  max-width: 100%;
+  border-spacing: 0;
+
+  thead {
+    background: $lightGrey;
+  }
+
+  th,
+  td {
+    padding: 0.5em 1em;
+    border: 1px double $greyTableBorder;
+  }
 }
