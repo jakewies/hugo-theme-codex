@@ -3,6 +3,8 @@
 {{ end }}
 
 {{ define "main" }} 
+  {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}        
+    
   <div class="post-list__container">
     <div class="tag__header">
       <a href="/blog">All posts</a><span class="separator">/</span>
@@ -12,7 +14,7 @@
       {{ range .Data.Pages }}
       <li class="post">
         <div class="post__header">
-          <time class="post__date" datetime="{{ .Date }}">{{ .Date.Format "Jan 2 2006" }}</time>
+          <time class="post__date" datetime="{{ .Date }}">{{ .Date.Format $dateFormat }}</time>
           <h2 class="post__title">
             <a href="{{.RelPermalink}}">{{ .Title }}</a>
           </h2>

@@ -15,6 +15,8 @@ themesDir = "../../"
 
 # Optional params
 [params]
+  dateFormat = "Jan 2 2006"
+
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
   twitter = "https://twitter.com/<your handle>"
   github = "https://github.com/<your handle>"
