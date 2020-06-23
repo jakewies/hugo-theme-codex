@@ -52,32 +52,36 @@ If you would rather override the about page's layout with your own, you can do s
 
 ### Configuring Social Icons
 
-Social Icons are optional. As of right now we support Twitter and GitHub, but more can be supported in the future. To show any of these icons, just provide the value in the `[params]` section of `config.toml`.
+Social Icons are optional. To show any of these icons, just provide the value in the `[params]` section of `config.toml`.
 
 ```toml
 # config.toml
 
 [params]
-  twitter = "hugo-theme-codex"
-  github = "jakewies/hugo-theme-codex"
+  twitter = "https://twitter.com/GoHugoIO"
+  github = "https://github.com/jakewies/hugo-theme-codex"
+  # ...
+
+  iconTitles = ["Twitter", "GitHub"]
 ```
 
-If either of these options are given, `hugo-theme-codex` will render the social icon in the footer.
+If any of these options are given, `hugo-theme-codex` will render the social icon in the footer, using the order specified in `iconTitles`.
 
 See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
 
-You can also create additional social icons by replicating the code in `partials/social-icons.html`. For example, to add an email social icon, you can add the follwing:
+You can also create additional social icons by:
+1. Add your own SVGs in `static/icons/`, for example `static/icons/reddit.svg`.
+2. Modify your site's config as follows:
+   ```toml
+   [params]
+      # ...
+      reddit = "<url to your reddit>"
+   
+      iconTitles = [ "...", "Reddit"]
+   ```
 
-```html
-<a class="social-icons__icon social-icons__icon--email" href="mailto:youremail@example.com"></a>
-```
-Note that you also need to add the following css in corresponding css files where social icons are displayed, i.e. `about.css` and `post.css`:
-
-```css
-.social-icons__icon--email {
-  background-image: url("/icons/email.svg");
-}
-```
+Make sure that the icon title must match the icon's file name. If the title contains more than one word, say "My Awesome Site",
+you can use dash "-" for the icon name: `my-awesome-site.svg`. 
 
 ### Creating a blog post
 
