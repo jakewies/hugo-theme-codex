@@ -41,7 +41,7 @@ The blockquote element represents content that is quoted from another source, op
 #### Blockquote with attribution
 
 > Simplicity is the ultimate sophistication.
-> — <cite>Leonardo da Vinci[^1]</cite>
+> <cite>Leonardo da Vinci[^1]</cite>
 
 [^1]: The above quote is often attributed to Leonardo da Vinci but there is no concrete evidence to support this.
 
