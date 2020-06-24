@@ -37,6 +37,8 @@
 {{ end }} 
 
 {{ define "scripts" }}
-  <script src="/js/table-of-contents.js"></script>
+  {{ if or .Params.toc .Site.Params.toc }}
+    <script src="/js/table-of-contents.js"></script>
+  {{ end }}
   <script src="https://unpkg.com/prismjs@^1.2"></script>
 {{ end }}
