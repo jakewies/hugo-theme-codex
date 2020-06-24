@@ -4,8 +4,6 @@
 
 .post {
   width: 100%;
-  max-width: 50rem;
-  margin: 0 auto;
 
   h2, h3 {
     position: relative;
@@ -49,9 +47,11 @@
   }
 }
 
-.article-w-ToC {
+.post__container {
   display: flex;
   flex-direction: row;
+  max-width: 50rem;
+  margin: 0 auto 0 auto;
 
   @media screen and (max-width:800px) {
     flex-direction: column;
