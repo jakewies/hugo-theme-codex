@@ -65,6 +65,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "jlebar",
+      "name": "Justin Lebar",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/150663?v=4",
+      "profile": "http://jlebar.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
