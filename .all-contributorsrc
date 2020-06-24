@@ -55,6 +55,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "pyvain",
+      "name": "Pyvain",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2924494?v=4",
+      "profile": "https://github.com/pyvain",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
