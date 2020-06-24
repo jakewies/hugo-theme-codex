@@ -18,7 +18,9 @@
                 {{ partial "math.html" . }}
             {{ end }}
         </article>
+        {{ if or .Params.toc .Site.Params.toc }}
           {{ .TableOfContents }}
+        {{ end }}
       </div>
       {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
     </div>
