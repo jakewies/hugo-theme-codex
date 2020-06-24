@@ -138,6 +138,11 @@
     color: #9b9b9b;
   }
 
+  a.active {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+  }
+
   @media screen and (max-width:800px) {
     visibility: hidden;
     width: 0;
