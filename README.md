@@ -6,6 +6,7 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 - Blog posts can be tagged 🏷
 - Mathematical notations are supported with KaTex 📐
 - Sass/SCSS for styling ✨
+- Support for Google Analytics 📈 and Disqus 💬
 
 ### Prerequisites
 

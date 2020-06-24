@@ -13,6 +13,12 @@ theme = "hugo-theme-codex"
 # This is only to get the exampleSite to work in this repo.
 themesDir = "../../" 
 
+# Add your Disqus shortname here.
+# disqusShortname = ""
+
+# Add your Google Analytics identifier: UA-XXXXXXXX-X
+# googleAnalytics = "" 
+
 # Optional params
 [params]
   # Follow the Hugo date/time format reference here: 
