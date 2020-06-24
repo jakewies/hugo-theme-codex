@@ -4,7 +4,7 @@
 
 .post {
   width: 100%;
-  max-width: 34rem;
+  max-width: 50rem;
   margin: 0 auto;
 
   h2, h3 {
@@ -42,16 +42,35 @@
     margin: 0 auto;
     display: block;
   }
+
+  @media screen and (max-width:800px) {
+    font-weight: 400;
+    max-width: 34rem;
+  }
 }
 
-.post__content a {
-  font-weight: 400;
-  color: #0366d6;
-  text-decoration: none;
+.article-w-ToC {
+  display: flex;
+  flex-direction: row;
 
-  &:hover {
-    text-decoration: underline;
+  @media screen and (max-width:800px) {
+    flex-direction: column;
   }
+}
+
+.post__content {
+  max-width: 40rem;
+
+  a {
+    font-weight: 400;
+    color: #0366d6;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 }
 
 .post__title {
@@ -100,6 +119,29 @@
   a {
     color: $darkGrey;
     text-decoration: underline;
+  }
+}
+
+#TableOfContents {
+  position: sticky;
+  align-self: start;
+  margin-left: 4rem;
+  white-space: nowrap;
+  top: 4rem;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #9b9b9b;
+  }
+
+  @media screen and (max-width:800px) {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
   }
 }
 

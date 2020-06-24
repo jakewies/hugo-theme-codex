@@ -7,17 +7,20 @@
 
     <div class="post">
       <header class="post__header">
-        <h1 class="post__title">{{.Title}}</h1>
+        <h1 id="post__title">{{.Title}}</h1>
         <time datetime="{{ .Date }}" class="post__date"
         >{{ .Date.Format $dateFormat }}</time>
       </header>
-      <article class="post__content">
-          {{ partial "anchored-headings.html" .Content }}
-          {{ if or .Params.math .Site.Params.math }}
-              {{ partial "math.html" . }}
-          {{ end }}
-      </article>
-        {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
+      <div class="article-w-ToC">
+        <article class="post__content">
+            {{ partial "anchored-headings.html" .Content }}
+            {{ if or .Params.math .Site.Params.math }}
+                {{ partial "math.html" . }}
+            {{ end }}
+        </article>
+          {{ .TableOfContents }}
+      </div>
+      {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
     </div>
 
     {{ template "_internal/disqus.html" . }}
