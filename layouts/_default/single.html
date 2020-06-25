@@ -28,7 +28,10 @@
           </div>
       </div>
       {{ if or .Params.toc .Site.Params.toc }}
+      <div class="toc-container">
+        <div class="toc-post-title">{{.Title}}</div>
         {{ .TableOfContents }}
+      </div>
       {{ end }}
     </div>
     

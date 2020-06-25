@@ -70,12 +70,24 @@ $tocBreakpoint: 1024px;
   padding-top: 3rem;
 }
 
-#TableOfContents {
+.toc-container {
   position: sticky;
   align-self: start;
   top: 3rem;
   max-width: 350px;
 
+  @media screen and (max-width: $tocBreakpoint) {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+  }
+}
+
+.toc-post-title {
+  font-size: 0.9rem;
+}
+
+#TableOfContents {
   ul {
     list-style: none;
     margin: 0;
@@ -89,12 +101,6 @@ $tocBreakpoint: 1024px;
 
   a.active {
     color: rgb(51, 51, 51);
-  }
-
-  @media screen and (max-width: $tocBreakpoint) {
-    visibility: hidden;
-    width: 0;
-    margin: 0;
   }
 }
 
