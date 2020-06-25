@@ -29,7 +29,7 @@
       </div>
       {{ if or .Params.toc .Site.Params.toc }}
       <div class="toc-container">
-        <div class="toc-post-title">{{.Title}}</div>
+          {{ if .Site.Params.showPageTitleInTOC }} <div class="toc-post-title">{{ .Title }}</div> {{ end }}
         {{ .TableOfContents }}
       </div>
       {{ end }}
