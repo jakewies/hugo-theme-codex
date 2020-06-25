@@ -5,35 +5,33 @@
 {{ define "main" }}
     {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
 
-    <div class="post__container">
-      <div class="post">
-        <header class="post__header">
-          <h1 id="post__title">{{.Title}}</h1>
-          <time datetime="{{ .Date }}" class="post__date"
-          >{{ .Date.Format $dateFormat }}</time>
-        </header>
-        <article class="post__content">
-            {{ partial "anchored-headings.html" .Content }}
-            {{ if or .Params.math .Site.Params.math }}
-                {{ partial "math.html" . }}
-            {{ end }}
-        </article>
-        {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">{{.Title}}</h1>
+            <time datetime="{{ .Date }}" class="post__date"
+            >{{ .Date.Format $dateFormat }}</time>
+          </header>
+          <article class="post__content">
+              {{ partial "anchored-headings.html" .Content }}
+              {{ if or .Params.math .Site.Params.math }}
+                  {{ partial "math.html" . }}
+              {{ end }}
+          </article>
+          {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
+          {{ template "_internal/disqus.html" . }}
+          <footer class="post__footer">
+            {{ partial "social-icons.html" .}}
+            <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
+          </footer>
+          </div>
       </div>
       {{ if or .Params.toc .Site.Params.toc }}
         {{ .TableOfContents }}
       {{ end }}
     </div>
-
-    {{ template "_internal/disqus.html" . }}
     
-{{ end }} 
-
-{{ define "footer" }}
-  <footer>
-      {{ partial "social-icons.html" .}}
-    <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
-  </footer>
 {{ end }} 
 
 {{ define "scripts" }}
