@@ -1,28 +1,35 @@
-function clearActiveStatesInTableOfContents() {
-	document.querySelectorAll('#TableOfContents ul li a').forEach((section) => {
-		section.classList.remove('active');
-	});
+function elementInToC(entry) {
+    return document.querySelector(`#TableOfContents ul li a[href="#${entry.target.getAttribute('id')}"]`);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+    var previousActive = null;
 
-	const observer = new IntersectionObserver(entries => {
-		var currentIR = 0;
-		entries.forEach(entry => {
-			const id = entry.target.getAttribute('id');
-			if (entry.intersectionRatio > currentIR) {
-				currentIR = entry.intersectionRatio;
-				clearActiveStatesInTableOfContents();
-				document.querySelector(`#TableOfContents ul li a[href="#${id}"]`).classList.add('active');
-			}
-		});
+    const observer = new IntersectionObserver(entries => {
+        var foundActive = false;
+        entries.forEach(entry => {
+            if (!foundActive && entry.isIntersecting) {
+                if(previousActive) {
+                    previousActive.classList.remove('active');
+                }
+                elementInToC(entry).classList.add('active');
+                foundActive = true;
+                previousActive = elementInToC(entry);
+            }
+            else {
+                elementInToC(entry).classList.remove('active');
+            }
+        })
 
-	});
+        if (!foundActive) {
+            previousActive.classList.add('active');
+        };
+    });
 
-	// Track all headers that have an `id` applied
-	document.querySelectorAll('article h3[id], article h2[id]').forEach((section) => {
-		observer.observe(section);
-	});
+    // Track all headers that have an `id` applied
+    document.querySelectorAll('article h3[id], article h2[id]').forEach((section) => {
+        observer.observe(section);
+    });
 });
 
 // Post title doesn't get parsed as it is not part of the content file
