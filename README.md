@@ -117,7 +117,7 @@ draft: true
 tags: []
 # Uses math typesetting
 math: false
-# Includes a table of contents
+# Includes a table of contents on screens >1024px
 toc: false
 ---
 ```
