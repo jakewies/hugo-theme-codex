@@ -99,7 +99,6 @@ This will execute the theme's `blog` archetype to create a new markdown file in 
 ```md
 # Default post frontmatter:
 
----
 # The title of your post. Default value is generated
 # From the markdown filename
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
@@ -119,7 +118,6 @@ tags: []
 math: false
 # Includes a table of contents on screens >1024px
 toc: false
----
 ```
 
 The frontmatter above is the default for a new post, but all values can be changed.
