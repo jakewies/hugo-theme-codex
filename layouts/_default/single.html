@@ -27,7 +27,7 @@
           </footer>
           </div>
       </div>
-      {{ if or .Params.toc .Site.Params.toc }}
+      {{ if .Params.toc }}
       <div class="toc-container">
           {{ if .Site.Params.showPageTitleInTOC }} <div class="toc-post-title">{{ .Title }}</div> {{ end }}
         {{ .TableOfContents }}
@@ -38,7 +38,7 @@
 {{ end }} 
 
 {{ define "scripts" }}
-  {{ if or .Params.toc .Site.Params.toc }}
+  {{ if .Params.toc }}
     <script src="/js/table-of-contents.js"></script>
   {{ end }}
   <script src="https://unpkg.com/prismjs@^1.2"></script>

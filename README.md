@@ -92,13 +92,37 @@ You can create a new blog post page by going to the root of your project and typ
 hugo new blog/:blog-post.md
 ```
 
-Where `:blog-post.md` is the name of the file of your new post.
+Where `:blog-post.md` is the name of the file of your new post. 
 
-Optional parameters for your post, added by the theme:
+This will execute the theme's `blog` archetype to create a new markdown file in `contents/blog/:blog-post.md` with the following frontmatter:
 
-* `math:true` enables math renderig with KaTeX
-* `toc: true` adds a table of contents to your post
+```md
+# Default post frontmatter:
 
+---
+# The title of your post. Default value is generated
+# From the markdown filename
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+# The date the post was created
+date: {{ .Date }}
+# The post filename
+slug: ""
+# Post description used for seo
+description: ""
+# Post keywords used for seo
+keywords: []
+# If true, the blog post will not be included in static build
+draft: true
+# Categorize your post with tags
+tags: []
+# Uses math typesetting
+math: false
+# Includes a table of contents
+toc: false
+---
+```
+
+The frontmatter above is the default for a new post, but all values can be changed.
 
 ### Adding a new section menu
 

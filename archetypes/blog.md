@@ -6,5 +6,6 @@ description: ""
 keywords: []
 draft: true
 tags: []
-stylesheet: "post.css"
+math: false
+toc: false
 ---
