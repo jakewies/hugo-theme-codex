@@ -5,9 +5,9 @@ module.exports = {
   htmlWhitespaceSensitivity: "css",
   printWidth: 80,
   proseWrap: "always",
-  semi: false,
+  semi: true,
   singleQuote: false,
   tabWidth: 2,
   trailingComma: "all",
   useTabs: false,
-}
+};
