@@ -3,13 +3,6 @@
 First off, thank you for your time and effort! This project is not very large
 and easy to jump into.
 
-## Development stack
-
-- Built with [Hugo](https://gohugo.io/) 🔥
-- [Gulp](https://gulpjs.com/) as a build tool 🍹
-- Styles in [Stylus](http://stylus-lang.com/) 💅🏻
-- [Yarn](https://yarnpkg.com/) as a package manager 📦
-
 ## Getting started
 
 1. Fork and clone the repository
@@ -23,29 +16,22 @@ yarn install
 
 ## Scripts
 
-There are 3 npm scripts that can be used for development purposes:
-
 ```bash
 yarn develop
 ```
 
-This command will start a hugo webserver and serve the `exampleSite`. This works
-well because the example site uses `hugo-theme-codex`, so any changes we make to
-the codebase can be viewed in real time.
-
-```bash
-yarn watch:assets
-```
-
-If you are working with `js` or `css` you will probably want to run this command
-in a separate tab from `yarn develop` so that any changes to assets like
-javascript and css will trigger a re-build by `gulp``.
-
-```bash
-yarn build:assets
-```
-
 Triggers a one-time build of the static directory.
+
+```bash
+yarn format
+```
+
+Runs prettier on the entire project directory.
+
+## Assets
+
+The `assets/` directory is where you can write JS and SCSS, which get processed
+into CSS files before being placed in the `static/` directory.
 
 ## Questions
 
