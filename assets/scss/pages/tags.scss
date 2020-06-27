@@ -1,12 +1,13 @@
-@import '../main';
-@import '../partials/post-list';
+@import "../main";
+@import "../partials/post-list";
 
 .tag__header {
   align-items: baseline;
   display: flex;
   margin: 0 auto 3rem;
 
-  a, .separator {
+  a,
+  .separator {
     color: $grey;
     font-size: 1.5rem;
   }

@@ -77,7 +77,7 @@ pre[class*="language-"] {
   color: #032f62;
 }
 
-.language-jsx span[class="comment"]{
+.language-jsx span[class="comment"] {
   color: pink;
 }
 
@@ -91,7 +91,10 @@ pre[class*="language-"] {
 }
 
 .language-html .token.tag .token.attr-value,
-.language-html .token.tag .token.attr-value .token.punctuation:not(:first-child) {
+.language-html
+  .token.tag
+  .token.attr-value
+  .token.punctuation:not(:first-child) {
   color: #032f62;
 }
 

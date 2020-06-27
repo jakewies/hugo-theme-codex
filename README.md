@@ -12,9 +12,11 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
 Hugo **extended version** (for Sass/SCSS support).
 
-For macOS users, the extended version is installed by default if you use `homebrew`.
+For macOS users, the extended version is installed by default if you use
+`homebrew`.
 
 For Windows users, you can install with `choco`:
+
 ```
 choco install hugo-extended -confirm
 ```
@@ -27,19 +29,24 @@ At the root of your Hugo project, run:
 git submodule add https://github.com/jakewies/hugo-theme-codex.git themes/codex
 ```
 
-Next, copy the contents of the [default `config.toml`](https://github.com/jakewies/hugo-theme-codex/blob/master/exampleSite/config.toml) to your site's `config.toml`. Make sure to read all the comments, as there a few nuances with Hugo themes that require some changes to that file. 
+Next, copy the contents of the
+[default `config.toml`](https://github.com/jakewies/hugo-theme-codex/blob/master/exampleSite/config.toml)
+to your site's `config.toml`. Make sure to read all the comments, as there a few
+nuances with Hugo themes that require some changes to that file.
 
 Finally, run:
 
 ```
-hugo server -D 
+hugo server -D
 ```
 
-**Note: If you are seeing a blank page it is probably because you have nothing in your `content/` directory. Read on to fix that.**
+**Note: If you are seeing a blank page it is probably because you have nothing
+in your `content/` directory. Read on to fix that.**
 
 ### Configuring the Home Page
 
-The site's home page can be configured by creating a `content/_index.md` file. This file can use the following frontmatter:
+The site's home page can be configured by creating a `content/_index.md` file.
+This file can use the following frontmatter:
 
 ```md
 ---
@@ -49,11 +56,15 @@ handle: "hugo-theme-codex"
 ---
 ```
 
-If you would rather override the about page's layout with your own, you can do so by creating a `layouts/index.html`. You can find the `index.html` file that `hugo-theme-codex` uses [here](https://github.com/jakewies/hugo-theme-codex/blob/master/layouts/index.html).
+If you would rather override the about page's layout with your own, you can do
+so by creating a `layouts/index.html`. You can find the `index.html` file that
+`hugo-theme-codex` uses
+[here](https://github.com/jakewies/hugo-theme-codex/blob/master/layouts/index.html).
 
 ### Configuring Social Icons
 
-Social Icons are optional. To show any of these icons, just provide the value in the `[params]` section of `config.toml`.
+Social Icons are optional. To show any of these icons, just provide the value in
+the `[params]` section of `config.toml`.
 
 ```toml
 # config.toml
@@ -66,65 +77,94 @@ Social Icons are optional. To show any of these icons, just provide the value in
   iconTitles = ["Twitter", "GitHub"]
 ```
 
-If any of these options are given, `hugo-theme-codex` will render the social icon in the footer, using the order specified in `iconTitles`.
+If any of these options are given, `hugo-theme-codex` will render the social
+icon in the footer, using the order specified in `iconTitles`.
 
-See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
+See the contents of the
+[example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite)
+for more details.
 
 You can also create additional social icons by:
-1. Adding your own SVGs in `static/images/social/`, for example `static/images/social/reddit.svg`.
+
+1. Adding your own SVGs in `static/images/social/`, for example
+   `static/images/social/reddit.svg`.
 2. Modifying your site's config as follows:
+
    ```toml
    [params]
       # ...
       reddit = "<url to your reddit>"
-   
+
       iconTitles = [ "...", "Reddit"]
    ```
 
-Make sure that the icon title must match the icon's file name. If the title contains more than one word, say "My Awesome Site",
-you can use dash "-" for the icon name: `my-awesome-site.svg`. 
+Make sure that the icon title must match the icon's file name. If the title
+contains more than one word, say "My Awesome Site", you can use dash "-" for the
+icon name: `my-awesome-site.svg`.
 
 ### Creating a blog post
 
-You can create a new blog post page by going to the root of your project and typing:
+You can create a new blog post page by going to the root of your project and
+typing:
 
 ```
 hugo new blog/:blog-post.md
 ```
 
-Where `:blog-post.md` is the name of the file of your new post. 
+Where `:blog-post.md` is the name of the file of your new post.
 
-This will execute the theme's `blog` archetype to create a new markdown file in `contents/blog/:blog-post.md` with the following frontmatter:
+This will execute the theme's `blog` archetype to create a new markdown file in
+`contents/blog/:blog-post.md` with the following frontmatter:
 
 ```md
 # Default post frontmatter:
 
 # The title of your post. Default value is generated
+
 # From the markdown filename
+
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+
 # The date the post was created
+
 date: {{ .Date }}
+
 # The post filename
+
 slug: ""
+
 # Post description used for seo
+
 description: ""
+
 # Post keywords used for seo
+
 keywords: []
+
 # If true, the blog post will not be included in static build
+
 draft: true
+
 # Categorize your post with tags
+
 tags: []
+
 # Uses math typesetting
+
 math: false
+
 # Includes a table of contents on screens >1024px
+
 toc: false
 ```
 
-The frontmatter above is the default for a new post, but all values can be changed.
+The frontmatter above is the default for a new post, but all values can be
+changed.
 
 ### Adding a new section menu
 
 In your site's `config.toml`, add a new menu definition for say, "photos":
+
 ```toml
 # config.toml
 
@@ -135,12 +175,13 @@ In your site's `config.toml`, add a new menu definition for say, "photos":
     url = "/photos"
 ```
 
-Then, put your posts under "content/photos". 
+Then, put your posts under "content/photos".
 
 ### Custom styling
 
-In your site's folder, create `assets/scss/custom.scss` and put your custom styling there. For example, the snippet below 
-changes the dot's color on your About page to blue:
+In your site's folder, create `assets/scss/custom.scss` and put your custom
+styling there. For example, the snippet below changes the dot's color on your
+About page to blue:
 
 ```scss
 // custom.scss
@@ -166,23 +207,31 @@ You can even use Hugo variables/params in your custom styles too!
 
 ### Tags
 
-Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.
+Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can
+view all the blog posts of a given tag by going to `/tags/:tag-name`, where
+`:tag-name` is the name of your tag.
 
 ### Favicon
 
-To update favicon of the site, replace the one in `static/favicon.ico` with your own.
+To update favicon of the site, replace the one in `static/favicon.ico` with your
+own.
 
 ## Contributing
 
-Check out the [CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-codex/blob/master/CONTRIBUTING.md) for more info on how you can contribute!
+Check out the
+[CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-codex/blob/master/CONTRIBUTING.md)
+for more info on how you can contribute!
 
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -201,6 +250,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
