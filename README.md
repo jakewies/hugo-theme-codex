@@ -71,8 +71,8 @@ If any of these options are given, `hugo-theme-codex` will render the social ico
 See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
 
 You can also create additional social icons by:
-1. Add your own SVGs in `static/icons/`, for example `static/icons/reddit.svg`.
-2. Modify your site's config as follows:
+1. Adding your own SVGs in `static/images/social/`, for example `static/images/social/reddit.svg`.
+2. Modifying your site's config as follows:
    ```toml
    [params]
       # ...
@@ -179,7 +179,7 @@ Check out the [CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-code
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -194,6 +194,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://kentnek.com"><img src="https://avatars1.githubusercontent.com/u/7024160?v=4" width="100px;" alt=""/><br /><sub><b>Kent</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=kentnek" title="Code">💻</a> <a href="https://github.com/jakewies/hugo-theme-codex/commits?author=kentnek" title="Documentation">📖</a> <a href="#design-kentnek" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/somaniarushi"><img src="https://avatars3.githubusercontent.com/u/54224195?v=4" width="100px;" alt=""/><br /><sub><b>Arushi Somani</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=somaniarushi" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/xvallspl"><img src="https://avatars0.githubusercontent.com/u/867299?v=4" width="100px;" alt=""/><br /><sub><b>Xavier Valls</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=xvallspl" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/pyvain"><img src="https://avatars3.githubusercontent.com/u/2924494?v=4" width="100px;" alt=""/><br /><sub><b>Pyvain</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=pyvain" title="Code">💻</a> <a href="https://github.com/jakewies/hugo-theme-codex/commits?author=pyvain" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://jlebar.com"><img src="https://avatars1.githubusercontent.com/u/150663?v=4" width="100px;" alt=""/><br /><sub><b>Justin Lebar</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=jlebar" title="Code">💻</a></td>
   </tr>
 </table>
 
