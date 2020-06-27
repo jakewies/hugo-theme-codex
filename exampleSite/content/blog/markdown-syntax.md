@@ -6,7 +6,8 @@ description: "Sample article showcasing basic Markdown syntax and formatting for
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["markdown", "css", "html", "themes"]
-stylesheet: "post.css"
+math: false
+toc: false
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

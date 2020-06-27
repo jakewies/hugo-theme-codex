@@ -5,35 +5,53 @@
 {{ define "main" }}
     {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
 
-    <div class="post">
-      <header class="post__header">
-        <h1 class="post__title">{{.Title}}</h1>
-        <time datetime="{{ .Date }}" class="post__date"
-        >{{ .Date.Format $dateFormat }}</time>
-      </header>
-      <article class="post__content">
-          {{ partial "anchored-headings.html" .Content }}
-          {{ if or .Params.math .Site.Params.math }}
-              {{ partial "math.html" . }}
-          {{ end }}
-      </article>
-        {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">{{.Title}}</h1>
+            <time datetime="{{ .Date }}" class="post__date"
+            >{{ .Date.Format $dateFormat }}</time>
+          </header>
+          <article class="post__content">
+              {{ partial "anchored-headings.html" .Content }}
+              {{ if or .Params.math .Site.Params.math }}
+                  {{ partial "math.html" . }}
+              {{ end }}
+          </article>
+          {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
+          {{ template "_internal/disqus.html" . }}
+          <footer class="post__footer">
+            {{ partial "social-icons.html" .}}
+            <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
+          </footer>
+          </div>
+      </div>
+      {{ if .Params.toc }}
+      <div class="toc-container">
+          {{ if .Site.Params.showPageTitleInTOC }} <div class="toc-post-title">{{ .Title }}</div> {{ end }}
+        {{ .TableOfContents }}
+      </div>
+      {{ end }}
     </div>
-
-    {{ template "_internal/disqus.html" . }}
     
 {{ end }} 
 
-{{ define "footer" }}
-  <footer>
-      {{ partial "social-icons.html" .}}
-    <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
-  </footer>
-{{ end }} 
+{{ define "scripts" }}
+
+{{ end }}
+
 
 {{ define "scripts" }}
   {{/* Hardcode a specific prismjs version to avoid a redirect on every page load. */}}
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  {{/* Automatically loads the needed languages to highlight the code blocks. */}}
   <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
     data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  {{ if .Params.toc }}
+    <script src="/js/table-of-contents.js"></script>
+  {{ end }}
+
 {{ end }}

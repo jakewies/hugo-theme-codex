@@ -6,7 +6,8 @@ description: "This is an example post for hugo-theme-codex."
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["hugo"]
-stylesheet: "post.css"
+math: false
+toc: true
 ---
 
 ## The standard Lorem Ipsum passage

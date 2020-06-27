@@ -6,8 +6,8 @@ description: "A brief guide to setup KaTeX"
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["math"]
-stylesheet: "post.css"
 math: true
+toc: false
 ---
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
