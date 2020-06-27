@@ -30,6 +30,6 @@
     "go"
   ],
   "lint-staged": {
-    "*.{js,css,scss,md}": "prettier --write"
+    "*.{js,css,scss}": "prettier --write"
   }
 }
