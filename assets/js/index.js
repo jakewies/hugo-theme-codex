@@ -3,8 +3,8 @@
  */
 
 function toggleMobileNavState() {
-  const body = document.querySelector("body")
-  body.classList.toggle("nav--active")
+  const body = document.querySelector("body");
+  body.classList.toggle("nav--active");
 }
 
 /*
@@ -12,8 +12,8 @@ function toggleMobileNavState() {
  */
 
 function initBurger() {
-  const burger = document.querySelector(".burger")
-  burger.addEventListener("click", toggleMobileNavState)
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", toggleMobileNavState);
 }
 
-initBurger()
+initBurger();
