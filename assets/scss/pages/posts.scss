@@ -1,5 +1,5 @@
-@import '../main';
-@import '../partials/post-list';
+@import "../main";
+@import "../partials/post-list";
 
 .tags__list {
   list-style: none;
@@ -40,7 +40,7 @@
   font-size: 0.9rem;
 
   &::before {
-    content: '#';
+    content: "#";
     font-size: 0.7rem;
     padding-right: 1px;
   }

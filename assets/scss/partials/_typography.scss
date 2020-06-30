@@ -7,7 +7,8 @@ $scale: 1.414;
 $leading: $baseLineHeight * 1rem;
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 95%;
 
@@ -20,7 +21,12 @@ html {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: $leading;
   margin-bottom: 0;
   line-height: $leading;
@@ -74,32 +80,31 @@ ol {
 blockquote {
   &::before {
     position: absolute;
-    content: '\201C';
+    content: "\201C";
 
     font-size: 6em;
-    font-family: 'Roboto', serif;
-    margin-top: 0.10em;;
+    font-family: "Roboto", serif;
+    margin-top: 0.1em;
     margin-left: -0.2em;
-    
+
     z-index: -1;
     color: darken($white, 7%);
   }
-  
+
   margin-top: $leading;
   margin-bottom: $leading;
   line-height: $leading;
   color: $black;
-  
+
   cite {
     &::before {
-      content: "— "
+      content: "— ";
     }
-    
+
     font-style: italic;
-    font-size: .95em;
+    font-size: 0.95em;
     color: $darkGrey;
   }
-
 }
 
 pre {

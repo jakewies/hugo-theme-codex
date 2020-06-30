@@ -5,7 +5,18 @@
   "description": "A minimal blog theme for Hugo",
   "license": "MIT",
   "scripts": {
-    "develop": "hugo server -s ./exampleSite/"
+    "develop": "hugo server -s ./exampleSite/",
+    "format": "prettier ./ --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": ">=10",
+    "prettier": "^2.0.5"
   },
   "browserslist": [
     "last 2 version",
@@ -17,5 +28,8 @@
     "hugo",
     "blog",
     "go"
-  ]
+  ],
+  "lint-staged": {
+    "*.{js,css,scss}": "prettier --write"
+  }
 }

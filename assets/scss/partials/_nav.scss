@@ -1,4 +1,4 @@
-@import 'burger';
+@import "burger";
 
 .nav {
   font-size: 16px;
@@ -34,7 +34,6 @@
   @media screen and (min-width: $medium) {
     width: auto;
   }
-
 
   @media screen and (max-width: $medium - 1) {
     transform: translateY(-25px);
