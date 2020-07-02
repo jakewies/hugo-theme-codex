@@ -8,5 +8,4 @@ Thumbs.db
 .vscode
 
 # Hugo
-**/resources/_gen
 public/
