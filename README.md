@@ -2,6 +2,8 @@
 
 A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 
+![Hugo desktop screenshot](/images/screenshot.png)
+
 - An about page 👋🏻 and a blog 📝
 - Blog posts can be tagged 🏷
 - Mathematical notations are supported with KaTex 📐
