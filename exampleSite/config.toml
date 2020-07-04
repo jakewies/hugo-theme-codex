@@ -5,6 +5,7 @@ themesDir = "../../"
 theme = "hugo-theme-codex" 
 
 # Override these settings with your own
+title = "codex"
 languageCode = "en-us"
 baseURL = "https://example.org/"
 copyright = "© {year}"
