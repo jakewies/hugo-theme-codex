@@ -1,17 +1,13 @@
+# REMOVE THIS
+themesDir = "../../" 
+
+# DO NOT REMOVE THIS
+theme = "hugo-theme-codex" 
+
 # Override these settings with your own
 languageCode = "en-us"
 baseURL = "https://example.org/"
 copyright = "© {year}"
-
-# The value "hugo-theme-codex" is only to get the exampleSite
-# to work in this repo. Change to whatever name you gave the theme
-# when you added it. If you followed the README, you should have 
-# added the theme using the name "codex".
-theme = "hugo-theme-codex" 
-
-# REMOVE THIS!
-# This is only to get the exampleSite to work in this repo.
-themesDir = "../../" 
 
 # Add your Disqus shortname here.
 # disqusShortname = ""
