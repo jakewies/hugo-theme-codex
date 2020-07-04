@@ -26,10 +26,18 @@ choco install hugo-extended -confirm
 At the root of your Hugo project, run:
 
 ```bash
-git submodule add https://github.com/jakewies/hugo-theme-codex.git themes/codex
+git submodule add https://github.com/jakewies/hugo-theme-codex.git themes/hugo-theme-codex
 ```
 
-Next, copy the contents of the [default `config.toml`](https://github.com/jakewies/hugo-theme-codex/blob/master/exampleSite/config.toml) to your site's `config.toml`. Make sure to read all the comments, as there a few nuances with Hugo themes that require some changes to that file. 
+Next, copy the contents of the [`exampleSite/config.toml`](https://github.com/jakewies/hugo-theme-codex/blob/master/exampleSite/config.toml) to your site's `config.toml`. Make sure to read all the comments, as there a few nuances with Hugo themes that require some changes to that file.
+
+The most important change you will need to make to the `config.toml` is removing [this line](https://github.com/jakewies/hugo-theme-codex/blob/master/exampleSite/config.toml#L2):
+
+```
+themesDir = "../../" 
+```
+
+It only exists in the example site so that the demo can function properly.
 
 Finally, run:
 
