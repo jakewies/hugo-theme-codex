@@ -76,6 +76,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "aareet",
+      "name": "Aareet Shermon",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/33654?v=4",
+      "profile": "https://www.aareet.com",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
