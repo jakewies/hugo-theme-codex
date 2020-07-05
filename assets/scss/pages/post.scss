@@ -197,6 +197,7 @@ footer {
   background: #ffffff;
 
   p {
+    margin-top: 1rem; // reduce margin top due to social icons' padding
     color: $grey;
     font-size: 0.65rem;
   }
