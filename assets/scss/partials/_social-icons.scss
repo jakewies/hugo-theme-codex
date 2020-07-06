@@ -3,14 +3,17 @@
   justify-content: center;
 }
 
-.social-icons__icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 24px;
+.social-icons__link {
+  padding: 0.8rem;
 
   &:not(:last-child) {
-    margin-right: 3em;
+    margin-right: 1em;
+  }
+  
+  .social-icons__icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

@@ -5,10 +5,10 @@
   {{ range $icons }}
     {{ $icon := anchorize . }} 
     {{ if isset $currentPage.Site.Params $icon }}
-      <a class="social-icons__icon" title="{{ . }}"
-         style="background-image: url('{{print "images/social/" $icon ".svg" | absURL}}')" 
+      <a class="social-icons__link" title="{{ . }}"
          href="{{ index $currentPage.Site.Params $icon }}"
          target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('{{print "images/social/" $icon ".svg" | absURL}}')"></div>
       </a>
     {{ end }}
   {{ end }}   
