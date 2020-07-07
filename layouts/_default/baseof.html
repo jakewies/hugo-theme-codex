@@ -8,7 +8,8 @@
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="{{ if .IsHome}}{{ .Site.Params.Description }}{{ else }}{{.Page.Params.Description}}{{ end }}">
+  <meta name="description"
+    content="{{ if .IsHome}}{{ .Site.Params.Description }}{{ else }}{{.Page.Params.Description}}{{ end }}">
   <meta name="keywords" content="{{ delimit .Keywords " , " }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -19,23 +20,34 @@
   {{ if isset .Site.Params "twitter" }}
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:description" content="{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"
-  />
+  <meta name="twitter:description"
+    content="{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}" />
   <meta name="twitter:site" content="@{{ .Site.Params.twitter }}" />
   <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}" />
   {{ end }}
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
   {{ block "stylesheets" . }} {{ end }}
-  {{ range .AlternativeOutputFormats }} 
-  {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }} 
-  {{ end }} 
+  {{ range .AlternativeOutputFormats }}
+  {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+  {{ end }}
   {{ block "links" . }} {{ end }}
   {{ partial "seo-schema.html" .}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816115-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171816115-1');
+  </script>
 </head>
 
 <body>
-  {{ partial "burger.html" .}} 
+  {{ partial "burger.html" .}}
 
   {{ partial "nav.html" .}}
 

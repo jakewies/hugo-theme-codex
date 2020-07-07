@@ -1,12 +1,12 @@
 {{ define "stylesheets" }}
-<link rel="stylesheet" href="/css/about.css" /> 
+<link rel="stylesheet" href="/css/about.css" />
 {{ end }}
 
 {{ define "main" }}
 
 <div class="splash-container">
   <div class="splash">
-    
+
     <h1>{{ .Params.heading }} <span class="wave">👋</span></h1>
     {{ if isset .Params "handle" }}
     <span class="handle">{{ .Params.handle }}</span>
@@ -21,5 +21,3 @@
 </div>
 
 {{ end }}
-
-
