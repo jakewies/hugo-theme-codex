@@ -189,7 +189,7 @@ Check out the [CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-code
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -209,6 +209,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://www.aareet.com"><img src="https://avatars1.githubusercontent.com/u/33654?v=4" width="100px;" alt=""/><br /><sub><b>Aareet Shermon</b></sub></a><br /><a href="#design-aareet" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/dgnicholson"><img src="https://avatars1.githubusercontent.com/u/6208288?v=4" width="100px;" alt=""/><br /><sub><b>dgnicholson</b></sub></a><br /><a href="#design-dgnicholson" title="Design">🎨</a></td>
   </tr>
 </table>
 
