@@ -9,3 +9,6 @@ Thumbs.db
 
 # Hugo
 public/
+
+# Web Storm
+/.idea/
