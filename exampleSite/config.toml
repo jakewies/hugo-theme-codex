@@ -36,6 +36,9 @@ copyright = "© {year}"
   # Currently, these icons are supported: 
   #   "Twitter", "GitHub", "Email", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
   iconTitles = ["Twitter", "GitHub"]
+  [params.blog]
+    # Enables summary view on blogs
+    summary = true
 
 # This disables Hugo's default syntax highlighting in favor
 # of prismjs. If you wish to use Hugo's default syntax highlighting
