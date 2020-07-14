@@ -16,7 +16,7 @@
         <h2 class="post__title">
           <a href="{{.RelPermalink}}">{{ .Title }}</a>
         </h2>
-        {{if .Site.Params.blog.summary }}
+        {{if .Site.Params.showSummary }}
         {{ .Summary }}
         {{if .Truncated }}
         <!-- This <div> includes a read more link, but only if the summary is truncated... -->
