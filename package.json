@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "develop": "hugo server -s ./exampleSite/",
+    "build:example": "hugo -s ./exampleSite/",
     "format": "prettier ./ --write"
   },
   "husky": {
