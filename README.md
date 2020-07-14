@@ -81,14 +81,14 @@ If any of these options are given, `hugo-theme-codex` will render the social ico
 See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
 
 You can also create additional social icons by:
-1. Adding your own SVGs in `static/images/social/`, for example `static/images/social/reddit.svg`.
+1. Adding your own SVGs in `static/svg/`, for example `static/svg/reddit.svg`.
 2. Modifying your site's config as follows:
    ```toml
    [params]
       # ...
       reddit = "<url to your reddit>"
    
-      iconTitles = [ "...", "Reddit"]
+      iconTitles = ["Reddit"]
    ```
 
 Make sure that the icon title must match the icon's file name. If the title contains more than one word, say "My Awesome Site",
