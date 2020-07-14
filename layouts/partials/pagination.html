@@ -1,14 +1,7 @@
-{{ if gt .Paginator.TotalPages 1}}
-<!-- Pagination -->
-<nav class="post__title" style="text-align: center; line-height: 2.3em; ">
-    {{ $paginator := .Paginator }}
-    {{ range .Paginator.Pagers }}
-    {{ if eq .PageNumber $paginator.PageNumber }}
-    <span class="pagination__page pagination__page--current" style="background-color: #d73a49; padding: 8px 15px; color: #ffffff; font-weight: bold;">{{ .PageNumber }}</span>
-    {{ else }}
-    <a href="{{ .URL }}" class="pagination__page" style="padding: 8px 15px;">{{ .PageNumber }}</a>
-    {{ end }}
-    {{ end }}
-</nav>
-{{ end }}
-
+<div class="paginator-container">
+  {{ if .Paginator.HasPrev }}
+  <a class="paginator paginator--left" href="{{ .Paginator.Prev.URL }}"></a>
+  {{ end }} {{ if .Paginator.HasNext }}
+  <a class="paginator paginator--right" href="{{ .Paginator.Next.URL }}"></a>
+  {{ end }}
+</div>

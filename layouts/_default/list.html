@@ -3,12 +3,12 @@
 {{ end }}
 
 {{ define "main" }}
-
-{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
+    
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
 
 <div class="post-list__container">
   <ul class="post-list">
-    {{ range  (.Paginator 5).Pages }}
+    {{ range .Pages }}
     <li class="post">
       <div class="post__header">
         <time class="post__date" datetime="{{ .Date }}"
@@ -16,13 +16,6 @@
         <h2 class="post__title">
           <a href="{{.RelPermalink}}">{{ .Title }}</a>
         </h2>
-          {{ .Summary }}
-          {{ if .Truncated }}
-          <!-- This <div> includes a read more link, but only if the summary is truncated... -->
-          <div class="post__title" align="right">
-              <a href="{{ .RelPermalink }}">Read More</a>
-          </div>
-          {{ end }}
         {{ partial "tags.html" .}}
       </div>
     </li>
@@ -30,7 +23,5 @@
   </ul>
   {{ partial "browse-by-tag.html" .}}
 </div>
-
-{{ partial "pagination.html" . }}
 
 {{ end }}
