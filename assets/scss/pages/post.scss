@@ -11,6 +11,7 @@ $tocBreakpoint: 1024px;
 
 .post__container {
   flex-grow: 1;
+  min-width: 0;
 }
 
 .post {
