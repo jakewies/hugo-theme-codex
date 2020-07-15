@@ -94,6 +94,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "msfjarvis",
+      "name": "Harsh Shandilya",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13348378?v=4",
+      "profile": "https://msfjarvis.dev",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
