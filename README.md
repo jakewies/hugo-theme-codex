@@ -178,7 +178,8 @@ The second option is to use the supported scss overrides. You can do this by cre
 ```scss
 // overrides.scss
 
-$accentColor: ''
+// The primary accent color used throughout the site
+$primary: ''
 ```
 
 ### Tags
