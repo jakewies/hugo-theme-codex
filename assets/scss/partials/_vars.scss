@@ -5,3 +5,7 @@ $navWidth: 100px;
 $meatWidth: 28px;
 $meatHeight: 2px;
 $burgerContainerHeight: 4rem;
+
+// import site overrides after variables after
+// variables have been declared
+@import "../overrides";
