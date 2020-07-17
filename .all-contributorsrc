@@ -103,6 +103,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ProfessorLogout",
+      "name": "Marco Kamner",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/13572444?v=4",
+      "profile": "https://twitter.com/ProfessorLogout",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
