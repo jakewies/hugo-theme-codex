@@ -73,10 +73,10 @@ Social Icons are optional. To show any of these icons, just provide the value in
   github = "https://github.com/jakewies/hugo-theme-codex"
   # ...
 
-  iconTitles = ["Twitter", "GitHub"]
+  iconOrder = ["Twitter", "GitHub"]
 ```
 
-If any of these options are given, `hugo-theme-codex` will render the social icon in the footer, using the order specified in `iconTitles`.
+If any of these options are given, `hugo-theme-codex` will render the social icon in the footer, using the order specified in `iconOrder`.
 
 See the contents of the [example site](https://github.com/jakewies/hugo-theme-codex/tree/master/exampleSite) for more details.
 
