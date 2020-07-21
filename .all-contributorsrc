@@ -112,6 +112,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ewenme",
+      "name": "ewen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10872821?v=4",
+      "profile": "https://ewen.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
