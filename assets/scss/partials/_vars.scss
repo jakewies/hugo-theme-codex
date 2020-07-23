@@ -1,10 +1,20 @@
-@import "_colors";
-@import "_screenSizes";
-
 $navWidth: 100px;
 $meatWidth: 28px;
 $meatHeight: 2px;
 $burgerContainerHeight: 4rem;
+
+// colors
+$black: #111;
+$lightGrey: #f7f7f7;
+$greyTableBorder: #eeeeee;
+$grey: #9b9b9b;
+$darkGrey: #717171;
+$white: #fff;
+$primary: #9013fe;
+
+// screenSizes
+$medium: 800px;
+$large: 1400px;
 
 // import site overrides after variables after
 // variables have been declared
