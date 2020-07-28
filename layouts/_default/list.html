@@ -1,28 +1,27 @@
 {{ define "styles" }}
-    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/posts.scss" "dest" "css/posts.css") }}
+{{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/posts.scss" "dest" "css/posts.css") }}
 {{ end }}
 
 {{ define "main" }}
-    
-{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
+
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
 
 <div class="post-list__container">
   <ul class="post-list">
     {{ range .Pages }}
     <li class="post">
       <div class="post__header">
-        <time class="post__date" datetime="{{ .Date }}"
-          >{{ .Date.Format $dateFormat }}</time>
+        <time class="post__date" datetime="{{ .Date }}">{{ .Date.Format $dateFormat }}</time>
         <h2 class="post__title">
           <a href="{{.RelPermalink}}">{{ .Title }}</a>
         </h2>
         {{if .Site.Params.showSummary }}
-        {{ .Summary }}
+        <div class="post__summary">
+          {{ .Summary }}
+        </div>
         {{if .Truncated }}
         <!-- This <div> includes a read more link, but only if the summary is truncated... -->
-        <div class="post__title" align="right">
-          <a href="{{ .RelPermalink }}">Read More</a>
-        </div>
+        <a class="read-more" href="{{ .RelPermalink }}">Read More</a>
         {{ end }}
         {{ end }}
         {{ partial "tags.html" .}}

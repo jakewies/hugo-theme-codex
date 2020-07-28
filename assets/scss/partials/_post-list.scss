@@ -19,6 +19,7 @@
 
 .post {
   margin-bottom: 1.5rem;
+  max-width: 34rem;
 }
 
 .post__title {
@@ -34,4 +35,20 @@
 .post__date {
   color: $grey;
   font-size: 0.8rem;
+}
+
+.post__summary {
+  color: $darkGrey;
+  margin-top: 1.5rem;
+}
+
+.post__summary p {
+  margin-top: 0;
+}
+
+.read-more {
+  display: inline-block;
+  color: $primary;
+  margin-top: 0.5rem 0;
+  font-size: 0.9rem;
 }
