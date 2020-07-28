@@ -189,7 +189,7 @@ Check out the [CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-code
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -213,6 +213,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://msfjarvis.dev"><img src="https://avatars0.githubusercontent.com/u/13348378?v=4" width="100px;" alt=""/><br /><sub><b>Harsh Shandilya</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=msfjarvis" title="Code">💻</a></td>
     <td align="center"><a href="https://twitter.com/ProfessorLogout"><img src="https://avatars3.githubusercontent.com/u/13572444?v=4" width="100px;" alt=""/><br /><sub><b>Marco Kamner</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=ProfessorLogout" title="Code">💻</a></td>
     <td align="center"><a href="https://ewen.io/"><img src="https://avatars3.githubusercontent.com/u/10872821?v=4" width="100px;" alt=""/><br /><sub><b>ewen</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=ewenme" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SanchithHegde"><img src="https://avatars2.githubusercontent.com/u/22217505?v=4" width="100px;" alt=""/><br /><sub><b>Sanchith Hegde</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=SanchithHegde" title="Code">💻</a> <a href="https://github.com/jakewies/hugo-theme-codex/commits?author=SanchithHegde" title="Documentation">📖</a></td>
   </tr>
 </table>
 

@@ -122,6 +122,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "SanchithHegde",
+      "name": "Sanchith Hegde",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22217505?v=4",
+      "profile": "https://github.com/SanchithHegde",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
