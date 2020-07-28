@@ -61,6 +61,17 @@ handle: "hugo-theme-codex"
 
 If you would rather override the about page's layout with your own, you can do so by creating a `layouts/index.html`. You can find the `index.html` file that `hugo-theme-codex` uses [here](https://github.com/jakewies/hugo-theme-codex/blob/master/layouts/index.html).
 
+### Configuring Blog 
+
+Blog configurations include: 
+
+1.	Enabling Summary for every post by providing the configuration in `[params]` section of `config.toml`
+```toml
+[params]
+  # Enables summary view on blogs
+  showSummary = true
+```
+
 ### Configuring Social Icons
 
 Social Icons are optional. To show any of these icons, just provide the value in the `[params]` section of `config.toml`.
