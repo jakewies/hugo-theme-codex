@@ -132,6 +132,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "CER10TY",
+      "name": "Sören Johanson",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5760400?v=4",
+      "profile": "https://soeren.codes",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
