@@ -149,8 +149,7 @@ Then, put your posts under "content/photos".
 
 ### Custom styling
 
-In your site's folder, create `assets/scss/custom.scss` and put your custom styling there. For example, the snippet below 
-changes the dot's color on your About page to blue:
+You have two options for custom styling. The first is to create an `assets/scss/custom.scss` in your project and put your custom styling there. For example, the snippet below changes the dot's color on your About page to blue:
 
 ```scss
 // custom.scss
@@ -172,6 +171,15 @@ You can even use Hugo variables/params in your custom styles too!
 # config.toml
 [params.colors]
     fancy = "#f06292"
+```
+
+The second option is to use the supported scss overrides. You can do this by creating an `assets/scss/overrides/scss` file in your project. The following overrides are supported:
+
+```scss
+// overrides.scss
+
+// The primary accent color used throughout the site
+$primary: ''
 ```
 
 ### Tags
