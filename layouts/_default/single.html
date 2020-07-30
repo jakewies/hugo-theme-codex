@@ -10,8 +10,7 @@
         <div class="post">
           <header class="post__header">
             <h1 id="post__title">{{.Title}}</h1>
-            <time datetime="{{ .Date }}" class="post__date"
-            >{{ .Date.Format $dateFormat }}</time>
+            {{ if .Date }}<time datetime="{{ .Date }}" class="post__date">{{ .Date.Format $dateFormat }}</time> {{ end }}
           </header>
           <article class="post__content">
               {{ partial "anchored-headings.html" .Content }}
