@@ -37,7 +37,7 @@ $tocBreakpoint: 1024px;
 
     .anchor:hover {
       @include theme() {
-        color: theme-get('light-text');
+        color: theme-get('high-neutral');
       }
     }
   }
@@ -49,7 +49,7 @@ $tocBreakpoint: 1024px;
 
     a {
       @include theme() {
-        color: theme-get('light-text');
+        color: theme-get('high-neutral');
       }
       text-decoration: underline;
     }
@@ -237,7 +237,7 @@ footer {
       &::before {
         content: "-";
         @include theme() {
-          color: theme-get('light-text');
+          color: theme-get('high-neutral');
         }
         position: absolute;
         margin-left: -15px;
@@ -266,7 +266,7 @@ table {
 
   thead {
     @include theme() {
-      background: theme-get('dark-bg');
+      background: theme-get('low-neutral');
     }
   }
 

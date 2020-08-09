@@ -106,7 +106,7 @@ blockquote {
     font-style: italic;
     font-size: 0.95em;
     @include theme() {
-      color: theme-get('light-text');
+      color: theme-get('high-neutral');
     }
   }
 }

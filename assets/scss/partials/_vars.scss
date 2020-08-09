@@ -25,10 +25,10 @@ $large: 1400px;
 $themes: (
   lightTheme: (
     text: #111,
-    dark-bg: #f7f7f7,
+    low-neutral: #f7f7f7,
     neutral-table-border: #eeeeee,
     neutral: #9b9b9b,
-    light-text: #717171,
+    high-neutral: #717171,
     bg: #fff,
     accent: #9013FE,
     accent-text: #580E99,
@@ -36,10 +36,10 @@ $themes: (
   ),
   darkTheme: (
     text: #fff,
-    dark-bg: #717171,
+    low-neutral: #717171,
     neutral-table-border: #eeeeee,
     neutral: #9b9b9b,
-    light-text: #f7f7f7,
+    high-neutral: #f7f7f7,
     bg: #111,
     accent: #9013FE,
     accent-text: #A56AD9,

@@ -47,7 +47,7 @@
   @include theme() {
   color: theme-get('neutral');
     &:hover {
-      color: theme-get('light-text');
+      color: theme-get('high-neutral');
     }
   }
 }
