@@ -30,19 +30,25 @@
 }
 
 .fancy {
-  color: $primary;
+  @include theme() {
+    color: theme-get('accent');
+  }
 }
 
 .handle {
   display: inline-block;
   margin-top: 0.275em;
-  color: $grey;
+  @include theme() {
+    color: theme-get('neutral');
+  }
   letter-spacing: 0.5px;
 }
 
 .writing {
+  @include theme() {
+    color: theme-get('accent');
+  }
   text-decoration: none;
-  color: $primary;
 }
 
 /* overrides */

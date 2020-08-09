@@ -28,13 +28,17 @@ $tocBreakpoint: 1024px;
       text-decoration: none;
       position: absolute;
       left: -1rem;
-      color: $grey;
+      @include theme() {
+        color: theme-get('neutral');
+      }
       font-size: 1.2rem;
       font-weight: 400;
     }
 
     .anchor:hover {
-      color: $darkGrey;
+      @include theme() {
+        color: theme-get('high-neutral');
+      }
     }
   }
 
@@ -44,7 +48,9 @@ $tocBreakpoint: 1024px;
     font-size: 1rem;
 
     a {
-      color: $darkGrey;
+      @include theme() {
+        color: theme-get('high-neutral');
+      }
       text-decoration: underline;
     }
   }
@@ -63,7 +69,9 @@ $tocBreakpoint: 1024px;
 }
 
 .post__date {
-  color: $grey;
+  @include theme() {
+    color: theme-get('neutral');
+  }
   font-size: 0.8rem;
 }
 
@@ -128,12 +136,18 @@ $tocBreakpoint: 1024px;
   text-decoration: none;
   padding: 0.2em 0.4em;
   border-radius: 3px;
-  background: lighten($primary, 41%);
-  color: $primary;
+  @include theme() {
+    background: lighten(theme-get('accent'), 41%);;
+  }
+  @include theme() {
+    color: theme-get('accent');
+  }
   font-size: 0.8rem;
 
   &:hover {
-    background: lighten($primary, 38%);
+    @include theme() {
+      background: lighten(theme-get('accent'), 38%);
+    }
   }
 }
 
@@ -182,12 +196,16 @@ $tocBreakpoint: 1024px;
 }
 
 .pagination__label {
-  color: $grey;
+  @include theme() {
+    color: theme-get('neutral');
+  }
   font-size: 0.8rem;
 }
 
 .pagination__title {
-  color: $black;
+  @include theme() {
+    color: theme-get('text');
+  }
   font-weight: 700;
   margin-top: 0.25rem;
 }
@@ -195,11 +213,15 @@ $tocBreakpoint: 1024px;
 footer {
   text-align: center;
   padding: 0 1.5rem;
-  background: $white;
+  @include theme() {
+    background: theme-get('bg');
+  }
 
   p {
     margin-top: 1rem; // reduce margin top due to social icons' padding
-    color: $grey;
+    @include theme() {
+      color: theme-get('neutral');
+    }
     font-size: 0.65rem;
   }
 }
@@ -214,9 +236,20 @@ footer {
 
       &::before {
         content: "-";
-        color: $darkGrey;
+        @include theme() {
+          color: theme-get('high-neutral');
+        }
         position: absolute;
         margin-left: -15px;
+      }
+    }
+  }
+  
+  a[href] {
+    @include theme() {
+      color: theme-get('accent-text');
+      &:visited {
+        color: theme-get('accent-bg')
       }
     }
   }
@@ -232,12 +265,16 @@ table {
   border-spacing: 0;
 
   thead {
-    background: $lightGrey;
+    @include theme() {
+      background: theme-get('low-neutral');
+    }
   }
 
   th,
   td {
     padding: 0.5em 1em;
-    border: 1px double $greyTableBorder;
+    @include theme() {
+      border: 1px double theme-get('neutral-table-border');
+    }
   }
 }

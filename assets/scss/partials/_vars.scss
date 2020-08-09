@@ -3,18 +3,49 @@ $meatWidth: 28px;
 $meatHeight: 2px;
 $burgerContainerHeight: 4rem;
 
-// colors
-$black: #111;
-$lightGrey: #f7f7f7;
-$greyTableBorder: #eeeeee;
-$grey: #9b9b9b;
-$darkGrey: #717171;
-$white: #fff;
-$primary: #9013fe;
-
 // screenSizes
 $medium: 800px;
 $large: 1400px;
+
+@mixin theme() {
+  @each $theme, $map in $themes {
+    $theme-map: $map !global;
+    .#{$theme} & {
+      @content;
+    }
+  }
+  $theme-map: null !global;
+}
+
+@function theme-get($key) {
+  @return map-get($theme-map, $key);
+}
+
+// colors
+$themes: (
+  lightTheme: (
+    text: #111,
+    low-neutral: #f7f7f7,
+    neutral-table-border: #eeeeee,
+    neutral: #9b9b9b,
+    high-neutral: #717171,
+    bg: #fff,
+    accent: #9013FE,
+    accent-text: #580E99,
+    accent-bg: #A56AD9,
+  ),
+  darkTheme: (
+    text: #fff,
+    low-neutral: #717171,
+    neutral-table-border: #eeeeee,
+    neutral: #9b9b9b,
+    high-neutral: #f7f7f7,
+    bg: #111,
+    accent: #9013FE,
+    accent-text: #A56AD9,
+    accent-bg: #580E99,
+  ),
+);
 
 // import site overrides after variables after
 // variables have been declared

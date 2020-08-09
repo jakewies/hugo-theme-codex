@@ -8,7 +8,9 @@
 
   a,
   .separator {
-    color: $grey;
+    @include theme() {
+      color: theme-get('neutral');
+    }
     font-size: 1.5rem;
   }
 

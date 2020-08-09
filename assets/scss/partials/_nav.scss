@@ -6,10 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $white;
+  @include theme() {
+    background: theme-get('bg');
+  }
   visibility: hidden;
   z-index: 1;
-
   @media screen and (min-width: $medium) {
     display: block;
     visibility: visible;
@@ -64,16 +65,22 @@
 }
 
 .nav__list a {
-  color: $grey;
+  @include theme() {
+    color: theme-get('neutral');
+  }
   text-decoration: none;
   font-size: 2em;
 
   &.active {
-    color: $black;
+    @include theme() {
+      color: theme-get('text');
+    }
   }
 
   &:hover {
-    color: $black;
+    @include theme() {
+      color: theme-get('text');
+    }
   }
 
   @media screen and (min-width: $medium) {

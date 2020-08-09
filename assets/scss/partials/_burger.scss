@@ -5,7 +5,9 @@
   padding: 0 1.5rem;
   position: fixed;
   width: 100%;
-  background: $white;
+  @include theme() {
+    background: theme-get('bg');
+  }
   z-index: 2;
 
   @media screen and (min-width: $medium) {
@@ -24,7 +26,9 @@
   position: absolute;
   width: $meatWidth;
   height: $meatHeight;
-  background: $black;
+  @include theme() {
+    background: theme-get('text');
+  }
   top: calc(50% - #{$meatHeight} / 2);
   left: calc(50% - #{$meatWidth} / 2);
   transition: all 150ms ease-in;
