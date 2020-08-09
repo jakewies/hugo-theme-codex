@@ -8,7 +8,11 @@
       <a class="social-icons__link" title="{{ . }}"
          href="{{ index $currentPage.Site.Params $icon }}"
          target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('{{print "svg/" $icon ".svg" | absURL}}')"></div>
+        {{ if eq $icon "email" }}
+          <i class="social-icons__icon fas fa-envelope fa-lg"></i>
+        {{ else }}
+          <i class="social-icons__icon fab fa-{{$icon}} fa-lg"></i>
+        {{ end }}
       </a>
     {{ end }}
   {{ end }}   

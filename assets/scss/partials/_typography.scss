@@ -86,13 +86,17 @@ blockquote {
     margin-left: -0.2em;
 
     z-index: -1;
-    color: darken($white, 7%);
+    @include theme() {
+      color: darken(theme-get('bg'), 7%);
+    }
   }
 
   margin-top: $leading;
   margin-bottom: $leading;
   line-height: $leading;
-  color: $black;
+  @include theme() {
+    color: theme-get('text');
+  }
 
   cite {
     &::before {
@@ -101,7 +105,9 @@ blockquote {
 
     font-style: italic;
     font-size: 0.95em;
-    color: $darkGrey;
+    @include theme() {
+      color: theme-get('light-text');
+    }
   }
 }
 

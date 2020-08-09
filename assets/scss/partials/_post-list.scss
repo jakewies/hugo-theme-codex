@@ -23,12 +23,16 @@
   font-weight: 500;
 
   a {
-    color: $black;
+    @include theme() {
+      color: theme-get('text');
+    }
     text-decoration: none;
   }
 }
 
 .post__date {
-  color: $grey;
+  @include theme() {
+    color: theme-get('neutral');
+  }
   font-size: 0.8rem;
 }

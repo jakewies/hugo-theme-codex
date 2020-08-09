@@ -1,7 +1,9 @@
 html,
 body {
-  background-color: $white;
-  color: $black;
+  @include theme() {
+    background-color: theme-get('bg');
+    color: theme-get('text');
+  }
   height: 100%;
 }
 

@@ -36,7 +36,6 @@
 
 .tag__link {
   text-decoration: none;
-  color: $grey;
   font-size: 0.9rem;
 
   &::before {
@@ -45,8 +44,11 @@
     padding-right: 1px;
   }
 
-  &:hover {
-    color: $darkGrey;
+  @include theme() {
+  color: theme-get('neutral');
+    &:hover {
+      color: theme-get('light-text');
+    }
   }
 }
 
