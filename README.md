@@ -132,6 +132,19 @@ toc: false
 
 The frontmatter above is the default for a new post, but all values can be changed.
 
+### Configuring Table of Contents in blog posts
+
+To display post title in Table of Contents in blog posts, set `showPageTitleInTOC`
+to `true` in the `[params]` section of `config.toml`.
+
+```toml
+# config.toml
+
+[params]
+  # ...
+  showPageTitleInTOC = true
+```
+
 ### Adding a new section menu
 
 In your site's `config.toml`, add a new menu definition for say, "photos":
