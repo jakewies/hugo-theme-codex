@@ -1,0 +1,35 @@
+.class_list_container{
+
+    @media screen and (min-width: 800px) {
+      padding-left: 50px;
+      padding-bottom: 20px;
+    }
+}
+
+.post-list-class{
+    width: 100%;
+    display: grid;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: 400px) {
+        grid-template-columns: 100%;
+        grid-gap: 1% 0%;
+    }
+
+    @media screen and (min-width: 400px) {
+        grid-template-columns: 45% 45%;
+        grid-gap: 1% 5%;
+    }
+
+    @media screen and (min-width: 640px) {
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 5% 3%;
+    }
+
+    @media screen and (min-width: 920px) {
+        grid-template-columns: 18% 18% 18% 18% 18%;
+        grid-gap: 5% 1%;
+    }
+}
