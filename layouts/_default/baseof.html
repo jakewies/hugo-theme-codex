@@ -21,7 +21,7 @@
   <meta name="twitter:creator" content="{{ .Site.Params.twitterCreator | default .Site.Params.twitter }}" />
   {{ end }}
 
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+  {{ partial "favicon.html" }}
 
   <!-- Styles -->
   {{ block "styles" . }} {{ end }} <!-- Get "style_opts" variable from "styles" block -->
