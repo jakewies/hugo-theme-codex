@@ -24,7 +24,7 @@ $tocBreakpoint: 1024px;
     padding-top: 10px;
 
     .anchor {
-      top: .5rem;
+      top: 0.5rem;
       text-decoration: none;
       position: absolute;
       left: -1rem;
@@ -78,9 +78,7 @@ $tocBreakpoint: 1024px;
   max-width: 350px;
 
   @media screen and (max-width: $tocBreakpoint) {
-    visibility: hidden;
-    width: 0;
-    margin: 0;
+    display: none;
   }
 }
 
