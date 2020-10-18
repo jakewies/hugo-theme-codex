@@ -210,7 +210,7 @@ Check out the [CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-code
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -242,6 +242,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://wilsonehusin.com"><img src="https://avatars1.githubusercontent.com/u/14004487?v=4" width="100px;" alt=""/><br /><sub><b>Wilson E. Husin</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=wilsonehusin" title="Code">💻</a></td>
     <td align="center"><a href="https://tommorris.org/"><img src="https://avatars0.githubusercontent.com/u/175?v=4" width="100px;" alt=""/><br /><sub><b>Tom Morris</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=tommorris" title="Code">💻</a></td>
     <td align="center"><a href="http://twitter.com/sdil"><img src="https://avatars0.githubusercontent.com/u/461537?v=4" width="100px;" alt=""/><br /><sub><b>Mohamad Fadhil</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=sdil" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/skvale"><img src="https://avatars0.githubusercontent.com/u/5314713?v=4" width="100px;" alt=""/><br /><sub><b>Sam Kvale</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=skvale" title="Code">💻</a></td>
   </tr>
 </table>
 
