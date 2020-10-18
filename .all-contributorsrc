@@ -159,6 +159,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tommorris",
+      "name": "Tom Morris",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/175?v=4",
+      "profile": "https://tommorris.org/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
