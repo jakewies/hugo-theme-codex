@@ -199,6 +199,10 @@ $primary: ''
 
 Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.
 
+### Pagination
+
+Every post created in `./blog` will enable pagination (previous and next post). You can manually remove them by removing `pagination = true` in specific post. If you wish to disable them completly, remove `pagination = true` from archetypes/blog.md
+
 ### Favicon
 
 To update favicon of the site, replace the one in `static/favicon.ico` with your own.

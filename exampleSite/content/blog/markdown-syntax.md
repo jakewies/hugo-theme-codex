@@ -6,6 +6,7 @@ description: "Sample article showcasing basic Markdown syntax and formatting for
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["markdown", "css", "html", "themes"]
+pagination: true
 math: false
 toc: false
 ---

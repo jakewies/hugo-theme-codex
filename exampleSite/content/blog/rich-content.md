@@ -6,6 +6,7 @@ description: "A brief description of Hugo Shortcodes"
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["shortcodes"]
+pagination: true
 math: false
 toc: false
 ---
