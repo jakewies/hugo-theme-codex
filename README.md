@@ -16,7 +16,7 @@ Features:
 
 ### For use
 
-Fork this repo, and change `theme.toml` based on your preference, you may also add custom features/fonts/colors accordingly (checkout `src/styles/pages`). Have fun :)
+Fork this repo, and change `theme.toml` based on your preference, you may also add custom features/fonts/colors accordingly (checkout `themes/codex/layouts` etc.). Have fun :)
 
 ![](images/screenshot.png)
 
