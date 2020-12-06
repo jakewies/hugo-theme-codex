@@ -32,6 +32,10 @@ copyright = "© {year}"
   # linkedin = "<link to your profile>"
   # youtube = "https://www.youtube.com/channel/<your channel>"
   
+  # name and description for meta tags
+  name = "<your name>"
+  description = "<site-wide description>"
+  
   # Titles for your icons (shown as tooltips), and also their display order.
   # Currently, these icons are supported: 
   #   "Twitter", "GitHub", "Email", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
