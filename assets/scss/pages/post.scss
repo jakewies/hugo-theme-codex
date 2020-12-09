@@ -242,15 +242,15 @@ table {
   }
 }
 
-/* footnote customization */ 
+/* footnote customization */
 
 // Footnote ([1])
-a[href^="#fn:"] {
+.footnote-ref {
   text-decoration: none;
   color: $primary;
-  font-family: 'monospace';
+  font-family: "monospace";
   border-radius: 3px;
-  font-size: .75rem;
+  font-size: 0.75rem;
   &:hover {
     background: lighten($primary, 38%);
   }
@@ -261,15 +261,13 @@ a[href^="#fn:"] {
     content: "]";
   }
 }
-  
+
 // Return to footnote (↩︎)
-a[href^="#fnref:"] {
+.footnote-backref {
   text-decoration: none;
   color: $primary;
-  border-radius: 3px;
   padding: 0rem 0.2rem 0rem 0.2rem;
   font-size: 0.85rem;
-  
   &:hover {
     background: lighten($primary, 38%);
   }
@@ -282,5 +280,42 @@ a[href^="#fnref:"] {
     color: $grey;
     border-top: 1px;
     margin: 1rem 0;
+  }
+}
+
+// Footnote highlighting
+
+@keyframes footnote_highlight {
+  0% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
+
+.footnotes li,
+.footnote-backref {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $primary;
+    opacity: 0;
+    border-radius: 0px;
+  }
+
+  &:target,
+  &:focus {
+    &::after {
+      animation: footnote_highlight ease 2s;
+      opacity: 0.05;
+    }
   }
 }
