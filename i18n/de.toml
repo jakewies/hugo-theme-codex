@@ -3,3 +3,6 @@ other = "Vorheriger Beitrag"
 
 [next_post]
 other = "Nächster Beitrag"
+
+[all_posts]
+other = "Alle Beitäge"
