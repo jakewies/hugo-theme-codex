@@ -1,5 +1,5 @@
 {{ $currentPage := . }}
-{{ $icons := .Site.Params.iconOrder | default (slice "Twitter" "GitHub" "Email" "Facebook" "GitLab" "Instagram" "LinkedIn" "YouTube") }}
+{{ $icons := .Site.Params.iconOrder | default (slice "Twitter" "GitHub" "Email" "Mastodon" "Facebook" "GitLab" "Instagram" "LinkedIn" "YouTube") }}
 
 <div class="social-icons">
   {{ range $icons }}
