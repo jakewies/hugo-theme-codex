@@ -6,6 +6,7 @@ description: "This is an example post for hugo-theme-codex."
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["hugo"]
+pagination: true
 math: false
 toc: true
 ---

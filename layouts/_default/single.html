@@ -18,7 +18,7 @@
                   {{ partial "math.html" . }}
               {{ end }}
           </article>
-          {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
+	  {{ partial "tags.html" .}} {{ if .Params.pagination }} {{ partial "post-pagination.html" .}} {{ end }}
           {{ template "_internal/disqus.html" . }}
           <footer class="post__footer">
             {{ partial "social-icons.html" .}}

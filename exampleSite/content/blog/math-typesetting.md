@@ -6,6 +6,7 @@ description: "A brief guide to setup KaTeX"
 keywords: ["gohugo", "hugo", "go", "blog"]
 draft: false
 tags: ["math"]
+pagination: true
 math: true
 toc: false
 ---
