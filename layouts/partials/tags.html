@@ -4,7 +4,7 @@
     {{ range $index, $tag := . }}
     {{ with $.Site.GetPage (printf "/%s/%s" $taxo $tag) -}}
     <li class="tag__item">
-        <a class="tag__link" href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+        <a class="tag__link" href="{{ .Permalink }}">{{ $tag }}</a>
     </li>
     {{- end -}}
   {{- end -}}
