@@ -9,6 +9,7 @@ A minimal blog theme built for [Hugo](https://gohugo.io/) 🍜
 - Mathematical notations are supported with KaTex 📐
 - Sass/SCSS for styling ✨
 - Support for Google Analytics 📈 and Disqus 💬
+- i18n support
 
 ### Prerequisites
 
@@ -198,6 +199,17 @@ $primary: ''
 ### Tags
 
 Right now `hugo-theme-codex` uses the `tags` taxonomy for blog posts. You can view all the blog posts of a given tag by going to `/tags/:tag-name`, where `:tag-name` is the name of your tag.
+
+### i18n
+
+Support for [`i18n`](https://gohugo.io/functions/i18n/#readout) is currently available for the following languages:
+
+- English
+- German
+
+If you would like to have another language supported, create a post in the [Discussions](https://github.com/jakewies/hugo-theme-codex/discussions) section of the repository. You may also support your language of choice by creating a `i18n/` directory in your project with a `.toml` file named after the language you are supporting. 
+
+There are not many UI-related strings to override in this theme. If you are looking to support a language of your own, refer to [the `i18n/en.toml` file](https://github.com/jakewies/hugo-theme-codex/blob/a7800567242b6c7d3b4bd8b36dd329c3232faf5a/i18n/en.toml) to see which strings can be overridden.
 
 ### Favicon
 
