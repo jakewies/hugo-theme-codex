@@ -87,12 +87,18 @@ blockquote {
 
     z-index: -1;
     color: darken($white, 7%);
+    @media (prefers-color-scheme: dark) {
+      color: lighten($black, 7%);
+    }
   }
 
   margin-top: $leading;
   margin-bottom: $leading;
   line-height: $leading;
   color: $black;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
 
   cite {
     &::before {
@@ -102,6 +108,9 @@ blockquote {
     font-style: italic;
     font-size: 0.95em;
     color: $darkGrey;
+    @media (prefers-color-scheme: dark) {
+      color: $lightGrey;
+    }
   }
 }
 
@@ -112,6 +121,9 @@ pre {
   word-wrap: normal;
   overflow: auto;
   background-color: #f6f8fa;
+  @media (prefers-color-scheme: dark) {
+    background-color: #090705;
+  }
   border-radius: 3px;
 }
 
@@ -121,6 +133,9 @@ code {
   padding: 0.2em 0.4em;
   margin: 0;
   background-color: rgba(27, 31, 35, 0.05);
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(27, 31, 35, 0.95);
+  }
   border-radius: 3px;
 }
 

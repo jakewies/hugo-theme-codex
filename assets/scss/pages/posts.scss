@@ -47,6 +47,9 @@
 
   &:hover {
     color: $darkGrey;
+    @media (prefers-color-scheme: dark) {
+      color: $lightGrey;
+    }
   }
 }
 

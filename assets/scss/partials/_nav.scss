@@ -7,6 +7,9 @@
   justify-content: center;
   align-items: center;
   background: $white;
+  @media (prefers-color-scheme: dark) {
+    background: $black;
+  }
   visibility: hidden;
   z-index: 1;
 
@@ -70,10 +73,16 @@
 
   &.active {
     color: $black;
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+    }
   }
 
   &:hover {
     color: $black;
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+    }
   }
 
   @media screen and (min-width: $medium) {
