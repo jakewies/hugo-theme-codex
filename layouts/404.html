@@ -1,3 +1,7 @@
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/404.scss" "dest" "css/404.css") }}
+{{ end }}
+
 {{ define "main" }}
 <article>
   <h1>
