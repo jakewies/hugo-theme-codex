@@ -1,0 +1,8 @@
+@import "../main";
+@import "../partials/vars";
+
+main {
+  @media screen and (min-width: $medium) {
+    padding-left: calc(10% + #{$navWidth});
+  }
+}
