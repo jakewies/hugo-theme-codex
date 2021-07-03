@@ -1,8 +1,6 @@
-# REMOVE THIS
-themesDir = "../../" 
 
 # DO NOT REMOVE THIS
-theme = "hugo-theme-codex" 
+theme = "hugo-theme-codex"
 
 # Override these settings with your own
 title = "codex"
@@ -14,11 +12,11 @@ copyright = "© {year}"
 # disqusShortname = ""
 
 # Add your Google Analytics identifier: UA-XXXXXXXX-X
-# googleAnalytics = "" 
+# googleAnalytics = ""
 
 # Optional params
 [params]
-  # Follow the Hugo date/time format reference here: 
+  # Follow the Hugo date/time format reference here:
   # https://gohugo.io/functions/format/#gos-layout-string
   dateFormat = "Jan 2 2006"
 
@@ -32,11 +30,11 @@ copyright = "© {year}"
   # instagram = "https://instagram.com/<your handle>"
   # linkedin = "<link to your profile>"
   # youtube = "https://www.youtube.com/channel/<your channel>"
-  
+
   # Titles for your icons (shown as tooltips), and also their display order.
-  # Currently, these icons are supported: 
+  # Currently, these icons are supported:
   #   "Twitter", "GitHub", "Email", "Mastodon", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
-  iconOrder = ["Twitter", "GitHub"]
+  iconOrder = ["GitHub","Email"]
 
   # Metadata for Twitter cards, defaults to params.twitter
   # twitterSite = "@<your handle>"
@@ -52,7 +50,7 @@ copyright = "© {year}"
 [markup]
   [markup.highlight]
     codeFences = false
-    
+
   # Set to false to disallow raw HTML in markdown files
   [markup.goldmark.renderer]
       unsafe = true
