@@ -222,7 +222,7 @@ Check out the [CONTRIBUTORS.md file](https://github.com/jakewies/hugo-theme-code
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -260,6 +260,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/gprst"><img src="https://avatars.githubusercontent.com/u/32643653?v=4?s=100" width="100px;" alt=""/><br /><sub><b>gprst</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=gprst" title="Code">💻</a> <a href="#design-gprst" title="Design">🎨</a></td>
+    <td align="center"><a href="http://michaelwatts.me"><img src="https://avatars.githubusercontent.com/u/811806?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Watts</b></sub></a><br /><a href="https://github.com/jakewies/hugo-theme-codex/commits?author=altescape" title="Code">💻</a></td>
   </tr>
 </table>
 
