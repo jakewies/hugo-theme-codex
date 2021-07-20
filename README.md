@@ -22,7 +22,7 @@ For Windows users, you can install with `choco`:
 choco install hugo-extended -confirm
 ```
 
-Note that as of https://github.com/jakewies/hugo-theme-codex/pull/176, this theme now supports Hugo version 82 and above.
+Note that this theme only supports Hugo version 82 and above.
 
 ### Getting started
 
