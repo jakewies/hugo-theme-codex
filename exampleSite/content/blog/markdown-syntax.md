@@ -46,6 +46,15 @@ The blockquote element represents content that is quoted from another source, op
 
 [^1]: The above quote is often attributed to Leonardo da Vinci but there is no concrete evidence to support this.
 
+## Footnotes
+
+Both simple footnotes[^2] and longer footnotes[^longnote] are supported. 
+
+[^2]: This is a simple footnote.
+
+[^longnote]: This is a longer footnote with multiple paragraphs. 
+
+    Include paragraphs into the footnote by indenting them. Include as many paragraphs as are needed.  
 
 ## Tables
 
