@@ -6,6 +6,9 @@
   position: fixed;
   width: 100%;
   background: $white;
+  @media (prefers-color-scheme: dark) {
+    background: $black;
+  }
   z-index: 2;
 
   @media screen and (min-width: $medium) {
@@ -25,6 +28,9 @@
   width: $meatWidth;
   height: $meatHeight;
   background: $black;
+  @media (prefers-color-scheme: dark) {
+    background: $white;
+  }
   top: calc(50% - #{$meatHeight} / 2);
   left: calc(50% - #{$meatWidth} / 2);
   transition: all 150ms ease-in;

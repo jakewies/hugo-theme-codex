@@ -24,6 +24,9 @@
 
   a {
     color: $black;
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+    }
     text-decoration: none;
   }
 }

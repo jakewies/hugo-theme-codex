@@ -35,6 +35,9 @@ $tocBreakpoint: 1024px;
 
     .anchor:hover {
       color: $darkGrey;
+      @media (prefers-color-scheme: dark) {
+        color: $lightGrey;
+      }
     }
   }
 
@@ -45,6 +48,9 @@ $tocBreakpoint: 1024px;
 
     a {
       color: $darkGrey;
+      @media (prefers-color-scheme: dark) {
+        color: $lightGrey;
+      }
       text-decoration: underline;
     }
   }
@@ -96,11 +102,17 @@ $tocBreakpoint: 1024px;
   a {
     text-decoration: none;
     color: #9b9b9b;
+    @media (prefers-color-scheme: dark) {
+      color: #646464;
+    }
     font-size: 0.9rem;
   }
 
   a.active {
     color: rgb(51, 51, 51);
+    @media (prefers-color-scheme: dark) {
+      color: rgb(204, 204, 204);
+    }
   }
 }
 
@@ -175,6 +187,9 @@ $tocBreakpoint: 1024px;
     }
     &:hover {
       background-color: #f6f9fc;
+      @media (prefers-color-scheme: dark) {
+        background-color: #090603;
+      }
     }
   }
 }
@@ -186,6 +201,9 @@ $tocBreakpoint: 1024px;
 
 .pagination__title {
   color: $black;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
   font-weight: 700;
   margin-top: 0.25rem;
 }
@@ -194,6 +212,9 @@ footer {
   text-align: center;
   padding: 0 1.5rem;
   background: $white;
+  @media (prefers-color-scheme: dark) {
+    background: $black;
+  }
 
   p {
     margin-top: 1rem; // reduce margin top due to social icons' padding
@@ -213,6 +234,9 @@ footer {
       &::before {
         content: "-";
         color: $darkGrey;
+        @media (prefers-color-scheme: dark) {
+          color: $lightGrey;
+        }
         position: absolute;
         margin-left: -15px;
       }
@@ -230,7 +254,10 @@ table {
   border-spacing: 0;
 
   thead {
-    background: $lightGrey;
+    color: $lightGrey;
+    @media (prefers-color-scheme: dark) {
+      color: $darkGrey;
+    }
   }
 
   th,
