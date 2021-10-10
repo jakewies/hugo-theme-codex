@@ -1,6 +1,7 @@
 @import "burger";
 
 .nav {
+  padding-left:40px;
   font-size: 16px;
   position: fixed;
   display: flex;
@@ -29,7 +30,7 @@
 }
 
 .nav__list {
-  text-align: right;
+  text-align: left;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -64,6 +65,7 @@
 }
 
 .nav__list a {
+
   color: $grey;
   text-decoration: none;
   font-size: 2em;
