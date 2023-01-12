@@ -1,0 +1,8 @@
+{{ if eq .Site.Params.sidebar.visible true }}
+
+<div class="sidebar-container">
+    <b class="sidebar-title"> {{ .Site.Params.sidebar.title }}</b>
+    <p class="sidebar-text">{{ .Site.Params.sidebar.text }}</p>
+</div>
+
+{{ end }}

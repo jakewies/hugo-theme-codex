@@ -1,26 +1,27 @@
 {{ define "styles" }}
-    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/tags.scss" "dest" "css/tags.css") }}
+{{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/tags.scss" "dest" "css/tags.css") }}
 {{ end }}
 
 {{ define "main" }}
-  {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
 
-  <div class="post-list__container">
-    <div class="tag__header">
-      <a href="/blog">{{ i18n "all_posts" }}</a><span class="separator">/</span>
-      <h1 class="tag__term">{{ .Title }}</h1>
-    </div>
-    <ul class="post-list">
-      {{ range .Data.Pages }}
-      <li class="post">
-        <div class="post__header">
-          <time class="post__date" datetime="{{ .Date }}">{{ .Date.Format $dateFormat }}</time>
-          <h2 class="post__title">
-            <a href="{{.RelPermalink}}">{{ .Title }}</a>
-          </h2>
-        </div>
-      </li>
-      {{ end }}
-    </ul>
+<div class="post-list__container">
+  <div class="tag__header">
+    <a href="/blog">{{ i18n "all_posts" }}</a><span class="separator">/</span>
+    <h1 class="tag__term">{{ .Title }}</h1>
   </div>
+  <ul class="post-list">
+    {{ range .Data.Pages }}
+    <li class="post">
+      <div class="post__header">
+        <time class="post__date" datetime="{{ .Date }}">{{ .Date.Format $dateFormat }}</time>
+        <h2 class="post__title">
+          <a href="{{.RelPermalink}}">{{ .Title }}</a>
+        </h2>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+  {{partial "sidebar.html" .}}
+</div>
 {{ end }}
