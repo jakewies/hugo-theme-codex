@@ -1,6 +1,11 @@
 @import "../main";
 @import "../partials/post-list";
 
+/* Aligns Sidebar content */
+.flex-wrapper {
+  display: flex;
+}
+
 .tags__list {
   list-style: none;
   margin: 0;
@@ -52,6 +57,8 @@
 
 /* page overrides */
 .post-list__container {
+  flex-grow: 1;
+  max-width: 34rem;
   display: flex;
   justify-content: space-between;
 }

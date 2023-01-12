@@ -1,0 +1,22 @@
+$sidebarBreakpoint: 1024px;
+
+.sidebar-container {
+    position: sticky;
+    align-self: start;
+    top: 3rem;
+    max-width: 300px;
+    text-align: center;
+
+    @media screen and (max-width: $sidebarBreakpoint) {
+        display: none;
+    }
+}
+
+.sidebar-title {
+    font-size: 0.9rem;
+}
+
+.sidebar-text {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
