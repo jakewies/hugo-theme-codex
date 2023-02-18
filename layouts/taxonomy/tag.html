@@ -4,11 +4,10 @@
 
 {{ define "main" }}
   {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}
-  {{ $blogDir := .Site.Params.blogDir | default "/blog" }}
 
   <div class="post-list__container">
     <div class="tag__header">
-      <a href="{{ $blogDir }}">{{ i18n "all_posts" }}</a><span class="separator">/</span>
+      <a href="/blog">{{ i18n "all_posts" }}</a><span class="separator">/</span>
       <h1 class="tag__term">{{ .Title }}</h1>
     </div>
     <ul class="post-list">
